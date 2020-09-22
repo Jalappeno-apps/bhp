@@ -2,14 +2,14 @@
   &-indicators {
     &-indicator {
       $size: 6px;
-      border: 1px solid theme-color("secondary");
+      border: 1px solid $primary-color;
       background: theme-color("light");
       width: $size;
       height: $size;
       flex: 0 0 auto;
       border-radius: 50%;
       &.active {
-        background: theme-color("secondary");
+        background: $primary-color;
       }
     }
   }
@@ -50,8 +50,8 @@
         border-radius: 50%;
         width: $size;
         height: $size;
-        background: $secondary-background;
-        color: $secondary-font-color;
+        background: pink;
+        color: red;
         @include media-breakpoint-up(sm) {
           $size: 44px;
           width: $size;

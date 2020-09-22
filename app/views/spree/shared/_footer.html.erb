@@ -1,46 +1,33 @@
 <% cache spree_nav_cache_key('footer') do %>
   <footer id="footer" class="pt-2 mx-auto border-top footer-spree" data-turbolinks-permanent>
     <div class="container">
-      <div class="row d-xl-flex justify-content-xl-around pb-xl-5">
-        <div class="col-md-6">
-          <div class="footer-contact-image">
-            <div class="footer-contact-text">
-              <h2 class="mb-5"> Masz jakieś pytania? <br/>Zapytaj naszego doradcę </h2>
-              <div class="mb-2 d-flex" style="justify-content: space-evenly">
-                <%= image_tag('custom/contact_icon', class: "mob-none") %>
-                <div>
-                  <p> Biuro: tel. +48 796 690 240 </p>
-                  <p> Marta Kucharska: +48 506 090 911 </p>
-                  <p> Marek Mucha: +48 501 690 240</p>
-                </div>
-              </div>
-              <div style="width: 100%" class="d-flex justify-content-center">
-                <%= link_to Spree.t('footer.button'), spree.products_path, class: 'text-center mt-3 btn btn-outline-primary spree-btn px-5' %>
-              </div>
+      <%= image_tag 'custom/payu' %>
+    </div>
+    <div class="sub-footer bg-primary p-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <%= image_tag "custom/pin_icon", class: "mr-3" %>
+            <div class="footer-address">
+              <p>Interplus Sp. z o.o. </p>
+              <p>ul. Nadbzurzańska 1/3 </p>
+              <p>99-400 Łowicz </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <h3>Szukasz współpracy długoterminowej?<br/>Wyślij zapytanie!</h3>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="<%= Spree.t('footer.contact.name_surname_placeholder') %>">
-              <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="company" placeholder="<%= Spree.t('footer.contact.company') %>">
-            </div>
-
-            <div class="form-group">
-              <input type="text" class="form-control" id="nip" placeholder="<%= Spree.t('footer.contact.nip') %>">
-            </div>
-
-            <div class="form-group">
-              <textarea class="form-control" id="message" placeholder="<%= Spree.t('footer.contact.message') %>" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <span class="text-white">© Interplus Sp. z o.o.</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <ul class="list-unstyled text-white">
+              <li><a href="#" class="text-white"><%= Spree.t('footer.my_account') %></a></li>
+              <li><a href="#" class="text-white"><%= Spree.t('footer.my_account') %></a></li>
+              <li><%= link_to Spree.t('footer.tos'), tos_path, class: "text-white" %> </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 pl:
   spree:
+    go_to_category: go
     homepage:
       shop_now: Kup Teraz
       produced_in: Polski producent
@@ -32,11 +33,14 @@ pl:
         title: ŚRODKI CZYSTOŚCI FORLUX
         button: WIECEJ
       offer:
-        title: Oferujemy rabat X % na pierwsze zakupy, za zapisanie się do Newslettera!
+        title: Oferujemy rabat X % na pierwsze zakupy, <br/>za zapisanie się do Newslettera!
         button: ZAPISZ SIĘ
     footer:
+      my_account: MOJE KONTO
+      tos: REGULAMIN
       button: ZADZWOŃ
       contact:
+        email: Email
         name_surname: Imię i nazwisko
         name_surname_placeholder: Imię i nazwisko
         nip: NIP

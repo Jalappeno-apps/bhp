@@ -31,7 +31,7 @@ gem 'spree_gateway', '~> 3.7'
 gem 'spree_reviews', github: 'archetype2142/spree_reviews', branch: 'master'
 gem 'coffee-rails'
 gem 'spree_simple_sales', github: 'archetype2142/spree_simple_sales'
-
+gem 'slim'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

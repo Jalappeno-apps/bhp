@@ -154,8 +154,8 @@
   <div class="offer-blue-box p-5">
     <div class="row">
       <div class="col-md-7 d-flex justify-content-center align-items-center flex-column">
-        <h5 class="white-text"> <%= Spree.t('homepage.offer.title') %> </h5>
-        <%= link_to Spree.t('homepage.offer.button'), spree.products_path, class: 'text-center btn btn-outline-primary color- spree-btn px-5' %>
+        <h5 class="white-text mb-2"> <%= Spree.t('homepage.offer.title').html_safe %> </h5>
+        <%= link_to Spree.t('homepage.offer.button'), spree.products_path, class: 'mt-2 text-center btn btn-outline-primary color- spree-btn px-5' %>
       </div>
       <div class="col-md-5">
         <%= image_tag "custom/bhp-letter" %>
@@ -164,8 +164,50 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div>
+ <div class="container">
+  <div class="row d-xl-flex justify-content-xl-around pb-xl-5">
+    <div class="col-md-6">
+      <div class="footer-contact-image">
+        <div class="footer-contact-text">
+          <h2 class="mb-5"> Masz jakieś pytania? <br/>Zapytaj naszego doradcę </h2>
+          <div class="mb-2 d-flex" style="justify-content: space-evenly">
+            <%= image_tag('custom/contact_icon', class: "mob-none") %>
+            <div>
+              <p> Biuro: tel. +48 796 690 240 </p>
+              <p> Marta Kucharska: +48 506 090 911 </p>
+              <p> Marek Mucha: +48 501 690 240</p>
+            </div>
+          </div>
+          <div style="width: 100%" class="d-flex justify-content-center">
+            <%= link_to Spree.t('footer.button'), spree.products_path, class: 'text-center mt-3 btn btn-outline-primary spree-btn px-5' %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>Szukasz współpracy długoterminowej?<br/>Wyślij zapytanie!</h3>
+      <form>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="<%= Spree.t('footer.contact.email') %>">
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="<%= Spree.t('footer.contact.name_surname_placeholder') %>">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="company" placeholder="<%= Spree.t('footer.contact.company') %>">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="nip" placeholder="<%= Spree.t('footer.contact.nip') %>">
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" id="message" placeholder="<%= Spree.t('footer.contact.message') %>" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </div>

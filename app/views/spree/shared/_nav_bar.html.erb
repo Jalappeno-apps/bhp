@@ -1,7 +1,7 @@
 <ul id="nav-bar" class="nav align-items-center d-flex justify-content-end navbar-right">
   <li>
     <div class="navbar-right-search-menu">
-      <button type="button" class="navbar-right-dropdown-toggle search-icons" aria-label="<%= Spree.t('nav_bar.show_search')%>">
+      <a href="tel:+48506090911" class="navbar-right-dropdown-toggle search-icons" aria-label="<%= Spree.t('nav_bar.show_search')%>">
         <%= icon(name: 'phone',
                  classes: 'd-none d-xl-inline-block',
                  width: 36,
@@ -11,11 +11,7 @@
                  classes: 'd-xl-none',
                  width: 24,
                  height: 24)  %>
-      </button>
-
-      <div id="search-dropdown" class="p-0 px-md-4 py-md-2 w-100 shadow navbar-right-search-menu-dropdown hide-on-esc">
-        <%= render partial: 'spree/shared/search' %>
-      </div>
+      </a>
     </div>
   </li>
   <% if defined?(spree.account_link_path) %>

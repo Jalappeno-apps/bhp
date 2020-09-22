@@ -76,6 +76,7 @@
         </div>
 
         <%= button_tag class: 'btn btn-primary w-100 text-uppercase font-weight-bold add-to-cart-button', id: 'add-to-cart-button', type: :submit, disabled: true do %>
+          <%= image_tag('custom/buy_basket') %>
           <%= Spree.t(:add_to_cart) %>
         <% end %>
       </div>

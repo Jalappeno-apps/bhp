@@ -10,6 +10,9 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+  config.logo = "custom/logo.svg"
+  config.admin_interface_logo = "custom/logo.svg"
+  config.currency = "PLN"
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false

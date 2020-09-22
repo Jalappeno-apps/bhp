@@ -9,4 +9,12 @@ Rails.application.routes.draw do
   # the default of "spree".
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  Spree::Core::Engine.add_routes do
+    resources :payu, only: [:index, :create]
+    resources :payu_notify, only: [:create, :index]
+    post 'payment_status', to: "payu#payment_status"
+  
+    get "/terms-of-service", to: "tos#index", as: :tos
+  end
 end
+
