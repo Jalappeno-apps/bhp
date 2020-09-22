@@ -1,3 +1,22 @@
+.footer-contact-image {
+  position: relative;
+  background: asset-url(custom/contact);
+  background-repeat: no-repeat;
+  min-height: 450px;
+
+  .footer-contact-text {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    color: white;
+  }
+
+  @include media-breakpoint-down(md) {
+    .mob-none {
+      display: none;
+    }
+  }
+}
 .footer-spree {
   background: $footer-background;
   color: $footer-font-color;

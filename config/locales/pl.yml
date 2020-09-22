@@ -1,0 +1,46 @@
+pl:
+  spree:
+    homepage:
+      shop_now: Kup Teraz
+      produced_in: Polski producent
+      safe_pay: Bezpieczne płatności
+      reliable_delivery: Niezawodność dostaw
+      returns: Zwroty i współpraca
+      main_banner: Main banner
+      interplus:
+        p1: Higienicznie i na błysk - takie efekty porządków są pożądane w każdym domu czy biurze. <br/>Interplus dostarcza podstawowe artykuły czystościowe oraz produkty do profesjonalnych prac porządkowych.
+        p2: Dbamy o każdy szczegół, aby w naszej ofercie stale były dostępne wszystkie niezbędne środki czyszczące, odzież i obuwie robocze oraz artykuły BHP. Od apteczek, przez rękawice ochronne, aż po znaki i instrukcje BHP. Wszystko w jednym sklepie stworzonym dla klientów indywidualnych oraz specjalistów oczekujących produktów najwyższej jakości, spełniających najsurowsze standardy i wymagania.
+        title: Interplus Sp. z o.o.
+      red_box:
+        title: Ochrona przed COVID-19.
+        button: SPRAWDŹ
+      category: 
+        title: Kategorie
+        c1: Ubrania i obuwie <br/> robocze
+        c2: Taśmy <br/> ostrzegawcze
+        c3: Środki czystości <br/> Forlux
+        c4: Apteczki
+        c5: Ochrona <br/> osobista
+        c6: COVID-19
+      forlux_section:
+        title: Folux
+        p1: Numer 1 wśród Polskich producentów środków czystości!
+        p2: Oferowane przez nas środki czystości są silnie skoncentrowane, dzięki czemu wystarczają na dłużej,
+        p3: co mocno obniża koszty sprzątania. Czytelne oznaczenia pojemności i dozowania ułatwiają rozcieńczanie i ich stosowanie. Nasze produkty stale są dostępne w ofercie kilkudziesięciu dystrybutorów w całej Polsce, a finalnymi klientami są firmy, restauracje, szkoły, instytucje, warsztaty samochodowe i wiele innych podmiotów. 
+        p4: Brzmi zachęcająco? Zapraszamy serdecznie Państwa do zapoznania się z naszymi produktami!
+      forlux_products:
+        title: ŚRODKI CZYSTOŚCI FORLUX
+        button: WIECEJ
+      offer:
+        title: Oferujemy rabat X % na pierwsze zakupy, za zapisanie się do Newslettera!
+        button: ZAPISZ SIĘ
+    footer:
+      button: ZADZWOŃ
+      contact:
+        name_surname: Imię i nazwisko
+        name_surname_placeholder: Imię i nazwisko
+        nip: NIP
+        company: Nazwa firmy
+        message: Wiadomość
+        
+

@@ -1,27 +1,22 @@
+<% @product = locals[:product] %>
+<% @product_summary = Spree::ProductSummaryPresenter.new(@product).call %>
+<% @variants = @product.variants %>
+<% variant_change_identifier = locals[:variant_change_identifier] %>
 <%
 =begin%>
- <template class="availability-template availability-template-not-available-in-currency">
-  <%= render 'cart_form_availability_templates', type: 'not-available-in-currency' %>
-</template>
-
-<template class="availability-template availability-template-in-stock">
-  <%= render 'cart_form_availability_templates', type: 'in-stock' %>
-</template>
-
-<template class="availability-template availability-template-backorderable">
-  <%= render 'cart_form_availability_templates', type: 'backorderable' %>
-</template>
-
-<template class="availability-template availability-template-out-of-stock">
-  <%= render 'cart_form_availability_templates', type: 'out-of-stock' %>
-</template> 
+ @product_properties = @product.product_properties.includes(:property) 
 <%
 =end%>
-
+<% @product_price = @product.price_in(current_currency).amount %>
+<%
+=begin%>
+ @product_images = product_images(@product, @variants) 
+<%
+=end%>
 <% is_product_available_in_currency = product_available_in_currency? %>
 <% default_variant = default_variant(@variants, @product) %>
 
-<%= form_for :order, html: {
+<%= form_for @product, html: {
     id: 'add-to-cart-form',
     class: 'add-to-cart-form',
     'data-product-summary': @product_summary.to_json,
@@ -40,15 +35,6 @@
 
     <div class="text-center text-md-left add-to-cart-form-general-availability text-uppercase">
       <%= Spree.t(:availability) %>:
-      <% if !is_product_available_in_currency %>
-        <%= render 'cart_form_availability_templates', type: 'not-available-in-currency' %>
-      <% elsif default_variant.in_stock? %>
-        <%= render 'cart_form_availability_templates', type: 'in-stock' %>
-      <% elsif default_variant.backorderable? %>
-        <%= render 'cart_form_availability_templates', type: 'backorderable' %>
-      <% else %>
-        <%= render 'cart_form_availability_templates', type: 'out-of-stock' %>
-      <% end %>
     </div>
 
     <% if @product.variants_and_option_values(current_currency).any? %>
@@ -75,10 +61,10 @@
           <%= render 'spree/shared/quantity_select', input_name: :quantity %>
         </div>
 
-        <%= button_tag class: 'btn btn-primary w-100 text-uppercase font-weight-bold add-to-cart-button', id: 'add-to-cart-button', type: :submit, disabled: true do %>
+        <%= button_tag class: 'btn btn-primary w-100 text-uppercase font-weight-bold add-to-cart-button', id: 'add-to-cart-button', type: :submit do %>
           <%= Spree.t(:add_to_cart) %>
         <% end %>
       </div>
     <% end %>
   </div>
-<% end %>
+<% end %> 
