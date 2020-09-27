@@ -21,25 +21,25 @@
     </div>
   </div>
   <div class="row mt-5 mb-5">
-    <div class="d-flex justify-content-center align-items-center flex-column col-sm-3">
+    <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/pl', class: 'homepage-image-exp') %>
       <h5 class="homepage-text-exp"><%= Spree.t('homepage.produced_in')%></h5>
     </div>
-    <div class="d-flex justify-content-center align-items-center flex-column col-sm-3">
+    <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/payments', class: 'homepage-image-exp') %>
       <h5 class="homepage-text-exp"><%= Spree.t('homepage.safe_pay')%></h5>
     </div>
-    <div class="d-flex justify-content-center align-items-center flex-column col-sm-3">
+    <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/delivery', class: 'homepage-image-exp') %>
       <h5 class="homepage-text-exp"><%= Spree.t('homepage.reliable_delivery')%></h5>
     </div>
-    <div class="d-flex justify-content-center align-items-center flex-column col-sm-3">
+    <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/returns', class: 'homepage-image-exp') %>
       <h5 class="homepage-text-exp"><%= Spree.t('homepage.returns')%></h5>
     </div>
   </div>
 
-  <div class="container">
+  <div>
     <ul class="nav nav-pills nav-fill" role="tablist">
       <li class="nav-item" href="#menu0">
         <a class="nav-link active" data-toggle="tab" href="#menu0">DARMOWA WYSYŁKA</a>
@@ -53,13 +53,13 @@
     </ul>
 
     <div class="tab-content">
-      <div id="menu0" class="container tab-pane active"><br>
+      <div id="menu0" class="tab-pane active"><br>
         <div data-product-carousel data-product-carousel-taxon-id='wow' class="mb-3"></div>
       </div>
-      <div id="menu1" class="container tab-pane"><br>
+      <div id="menu1" class="tab-pane"><br>
         <div data-product-carousel data-product-carousel-taxon-id='trending' class="mb-3"></div>
       </div>
-      <div id="menu2" class="container tab-pane"><br>
+      <div id="menu2" class="tab-pane"><br>
         <div data-product-carousel data-product-carousel-taxon-id='trending' class="mb-3"></div>
       </div>
     </div>
@@ -158,7 +158,7 @@
         <%= link_to Spree.t('homepage.offer.button'), spree.products_path, class: 'mt-2 text-center btn btn-outline-primary color- spree-btn px-5' %>
       </div>
       <div class="col-md-5">
-        <%= image_tag "custom/bhp-letter" %>
+        <%= image_tag "custom/bhp-letter", class: "main" %>
       </div>
     </div>
   </div>
@@ -185,29 +185,46 @@
       </div>
     </div>
     <div class="col-md-6">
-      <h3>Szukasz współpracy długoterminowej?<br/>Wyślij zapytanie!</h3>
-      <form>
-        <div class="form-group">
-          <input type="email" class="form-control" placeholder="<%= Spree.t('footer.contact.email') %>">
-          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="<%= Spree.t('footer.contact.name_surname_placeholder') %>">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="company" placeholder="<%= Spree.t('footer.contact.company') %>">
-        </div>
+      <div class="container">
+        <h3 class="mt-5 mb-5">Szukasz współpracy długoterminowej?<br/>Wyślij zapytanie!</h3>
+        <form>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <input type="email" class="form-control round-input" placeholder="<%= Spree.t('footer.contact.email') %>">
+              <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group col-12">
+              <input type="text" class="form-control round-input" placeholder="<%= Spree.t('footer.contact.name_surname_placeholder') %>">
+            </div>
 
-        <div class="form-group">
-          <input type="text" class="form-control" id="nip" placeholder="<%= Spree.t('footer.contact.nip') %>">
-        </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control round-input" id="company" placeholder="<%= Spree.t('footer.contact.company') %>">
+            </div>
 
-        <div class="form-group">
-          <textarea class="form-control" id="message" placeholder="<%= Spree.t('footer.contact.message') %>" rows="3"></textarea>
-        </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control round-input" id="nip" placeholder="<%= Spree.t('footer.contact.nip') %>">
+            </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+            <div class="form-group col-12">
+              <textarea class="form-control round-input" id="message" placeholder="<%= Spree.t('footer.contact.message') %>" rows="3"></textarea>
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary">Wyślij</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+<style>
+  .main {
+    width: 100%;
+  }
+
+  .round-input {
+    border: 1px solid red;
+    border-radius: 10px;
+  }
+</style>

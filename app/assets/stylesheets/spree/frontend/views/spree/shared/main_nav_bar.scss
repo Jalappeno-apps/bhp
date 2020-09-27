@@ -123,4 +123,13 @@
   justify-content: space-evenly;
   background: $primary-color;
   border-radius: 5px;
+
+  @include media-breakpoint-down(md) {
+    display: none !important;
+  }
+}
+
+.secondary-mobile-nav {
+  background: $primary-color;
+  border-radius: 5px;
 }

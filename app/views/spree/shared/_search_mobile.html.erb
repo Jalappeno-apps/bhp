@@ -1,0 +1,22 @@
+<%= form_tag spree.products_path, method: :get, class: "ml-3 form-search" do %>
+  <%= search_field_tag :keywords,
+                      params[:keywords],
+                      placeholder: Spree.t(:search),
+                      autofocus: true,
+                      class: "search-field p-1" %>
+<% end %>
+
+
+<style>
+  .search-field {
+    border: 3px solid #EC003B;
+    border-radius: 30px;
+    width: 100%;
+    padding-left: 20px !important;
+  }
+
+  .form-search {
+    width: 100%;
+    border-radius: 30px;
+  }
+</style>

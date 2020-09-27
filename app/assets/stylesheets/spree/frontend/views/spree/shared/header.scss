@@ -42,7 +42,7 @@ body {
     &-mobile-menu-toggler {
       flex-basis: 0;
       .navbar-toggler {
-        color: $header-font-color;
+        color: black;
       }
     }
   }
@@ -83,3 +83,11 @@ body {
 // .menu-secondary {
 //   background-color: $primary-color;
 // }
+.header-spree-fluid-mobile-menu-toggler {
+  color: white;
+}
+.dispnone {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

@@ -20,6 +20,7 @@
   @include media-breakpoint-down(md) {
     background-image: initial;
     background-color: #c72f43;
+    padding: 10px !important;
   }
 
   p {
@@ -54,7 +55,9 @@
 }
 
 .homepage-text-exp {
+  text-align: center;
   @include media-breakpoint-down(md) {
+    margin-bottom: 10px;
     font-size: 1.2rem;
   }
 }
