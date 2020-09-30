@@ -30,7 +30,7 @@
   .red-banner-text-align {
     right: 20%;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 5%;
 
     @include media-breakpoint-down(md) {
@@ -84,7 +84,7 @@
   .red-banner-text-align {
     right: 20%;
     position: absolute;
-    top: 25%;
+    top: 15%;
 
     @include media-breakpoint-down(md) {
       margin-left: auto;

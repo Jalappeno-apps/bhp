@@ -24,7 +24,7 @@ pl:
         c5: Ochrona <br/> osobista
         c6: COVID-19
       forlux_section:
-        title: Folux
+        title: Forlux
         p1: Numer 1 wśród Polskich producentów środków czystości!
         p2: Oferowane przez nas środki czystości są silnie skoncentrowane, dzięki czemu wystarczają na dłużej,
         p3: co mocno obniża koszty sprzątania. Czytelne oznaczenia pojemności i dozowania ułatwiają rozcieńczanie i ich stosowanie. Nasze produkty stale są dostępne w ofercie kilkudziesięciu dystrybutorów w całej Polsce, a finalnymi klientami są firmy, restauracje, szkoły, instytucje, warsztaty samochodowe i wiele innych podmiotów. 
@@ -36,7 +36,7 @@ pl:
         title: Oferujemy rabat X % na pierwsze zakupy, <br/>za zapisanie się do Newslettera!
         button: ZAPISZ SIĘ
     footer:
-      my_account: MOJE KONTO
+      my_account: Moje Konto
       tos: REGULAMIN
       button: ZADZWOŃ
       contact:

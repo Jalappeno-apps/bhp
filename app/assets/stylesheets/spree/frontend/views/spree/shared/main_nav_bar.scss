@@ -19,7 +19,7 @@
       color: white;
 
       &:hover {
-       
+        text-decoration-color: #003975 !important;
         text-decoration: none;
       }
     }
@@ -34,7 +34,7 @@
         color: white;
         text-decoration: none;
         &:after {
-          border-bottom-color: white;
+          border-bottom-color: #003975;
         }
       }
     }
@@ -62,7 +62,7 @@
         width: calc(100% - 2rem);
         position: absolute;
         left: 1rem;
-        bottom: 0.75rem;
+        bottom: 0.5rem;
         padding: 0;
         margin: 0;
         border: 0;
@@ -120,7 +120,6 @@
 }
 
 #secondary-menu {
-  justify-content: space-evenly;
   background: $primary-color;
   border-radius: 5px;
 

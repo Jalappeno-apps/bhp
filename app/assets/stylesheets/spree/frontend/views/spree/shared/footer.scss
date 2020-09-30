@@ -10,6 +10,12 @@
   background-repeat: no-repeat;
   min-height: 450px;
 
+  @include media-breakpoint-down(md) {
+    background: asset-url(custom/contact-mob);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .footer-contact-text {
     position: absolute;
     top: 10%;
@@ -21,6 +27,12 @@
     .mob-none {
       display: none;
     }
+  }
+}
+
+.mob-none {
+   @include media-breakpoint-down(md) {
+    display: none;
   }
 }
 .footer-spree {

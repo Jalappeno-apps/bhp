@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'spree_i18n', github: 'archetype2142/spree_i18n', branch: 'master'
-gem 'spree', '~> 4.1'
+gem 'spree', github: 'archetype2142/spree', branch: 'master'
 gem 'spree_auth_devise', '~> 4.2'
 gem 'spree_gateway', '~> 3.7'
 # Use Active Storage variant

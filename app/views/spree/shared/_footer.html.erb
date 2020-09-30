@@ -5,9 +5,9 @@
     </div>
     <div class="sub-footer bg-primary p-5">
       <div class="row">
-        <div class="col-6 col-md-4">
+        <div class="col-6 mob-none col-md-4">
           <div class="d-flex justify-content-center align-items-center">
-            <%= image_tag "custom/pin_icon", class: "mr-3 d-none" %>
+            <%= image_tag "custom/pin_icon", class: "mr-3" %>
             <div class="footer-address">
               <p>
                 Interplus Sp. z o.o. </br>
@@ -17,17 +17,22 @@
             </div>
           </div>
         </div>
-        <div class="col-4 d-none">
+        <div class="col-4 mob-none" style="display: flex;justify-content: center;align-items: flex-end;">
           <div class="d-flex justify-content-center align-items-center">
             <span class="text-white">© Interplus Sp. z o.o.</span>
           </div>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-4">
           <div class="d-flex justify-content-center align-items-center">
             <ul class="list-unstyled text-white">
-              <li><a href="#" class="text-white"><%= Spree.t('footer.my_account') %></a></li>
-              <li><a href="#" class="text-white"><%= Spree.t('footer.my_account') %></a></li>
-              <li><%= link_to Spree.t('footer.tos'), tos_path, class: "text-white" %> </li>
+              <div class="row">
+                <li class="col-6"><a href="#" class="text-white"><%= Spree.t('footer.my_account') %></a></li>
+                <li class="col-6"><a href="#" class="text-white"><%= Spree.t('footer.my_account') %></a></li>
+                <li class="col-6">
+                  <%= link_to 'Odstąpienie od umowy', "/Formularz_zwrotu.pdf", class: "text-white" %>
+                </li>
+                <li class="col-6"><%= link_to Spree.t('footer.tos'), tos_path, class: "text-white" %> </li>
+              </div>
             </ul>
           </div>
         </div>

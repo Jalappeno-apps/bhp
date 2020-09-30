@@ -23,24 +23,24 @@
   <div class="row mt-5 mb-5">
     <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/pl', class: 'homepage-image-exp') %>
-      <h5 class="homepage-text-exp"><%= Spree.t('homepage.produced_in')%></h5>
+      <h6 class="homepage-text-exp"><%= Spree.t('homepage.produced_in')%></h6>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/payments', class: 'homepage-image-exp') %>
-      <h5 class="homepage-text-exp"><%= Spree.t('homepage.safe_pay')%></h5>
+      <h6 class="homepage-text-exp"><%= Spree.t('homepage.safe_pay')%></h6>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/delivery', class: 'homepage-image-exp') %>
-      <h5 class="homepage-text-exp"><%= Spree.t('homepage.reliable_delivery')%></h5>
+      <h6 class="homepage-text-exp"><%= Spree.t('homepage.reliable_delivery')%></h6>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-column col-md-3 col-6">
       <%= image_tag('custom/returns', class: 'homepage-image-exp') %>
-      <h5 class="homepage-text-exp"><%= Spree.t('homepage.returns')%></h5>
+      <h6 class="homepage-text-exp"><%= Spree.t('homepage.returns')%></h6>
     </div>
   </div>
 
   <div>
-    <ul class="nav nav-pills nav-fill" role="tablist">
+    <ul class="nav nav-pills nav-fill" role="tablist" style="flex-wrap: initial;">
       <li class="nav-item" href="#menu0">
         <a class="nav-link active" data-toggle="tab" href="#menu0">DARMOWA WYSYŁKA</a>
       </li>
@@ -78,7 +78,7 @@
   <div class="big-red-box p-5">
     <div class="red-banner-text-align">
       <h3 class="red-banner-text"><%= Spree.t('homepage.red_box.title') %></h3>
-      <%= link_to Spree.t('homepage.red_box.button'), spree.products_path, class: 'text-center mt-3 btn btn-outline-primary spree-btn px-5' %>
+      <%= link_to Spree.t('homepage.red_box.button'), spree.products_path, class: 'btn btn-primary spree-btn px-5 mt-2', style: "font-size: 2rem;"%>
     </div>
   </div>
 </div>
@@ -171,7 +171,7 @@
         <div class="footer-contact-text">
           <h2 class="mb-5"> Masz jakieś pytania? <br/>Zapytaj naszego doradcę </h2>
           <div class="mb-2 d-flex" style="justify-content: space-evenly">
-            <%= image_tag('custom/contact_icon', class: "mob-none") %>
+            <%= image_tag('custom/contact_icon', class: "") %>
             <div>
               <p> Biuro: tel. +48 796 690 240 </p>
               <p> Marta Kucharska: +48 506 090 911 </p>
