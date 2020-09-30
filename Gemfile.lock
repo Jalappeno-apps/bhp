@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/archetype2142/spree_reviews.git
-  revision: 25f321db68679c217b3c14d64fcf7e19a52f7e2b
+  revision: d73186fbc391f102f538a71042f2cb284be8efc9
   branch: master
   specs:
     spree_reviews (3.3.0)
