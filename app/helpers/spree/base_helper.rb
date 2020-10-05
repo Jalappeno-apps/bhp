@@ -129,6 +129,13 @@ module Spree
       end
     end
 
+    def display_compare_at_price(product_or_variant)
+      product_or_variant.
+        price_in(current_currency).
+        display_compare_at_price_including_vat_for(current_price_options).
+        to_html
+    end
+
     def default_image_for_product_or_variant(product_or_variant)
       Rails.cache.fetch("spree/default-image/#{product_or_variant.cache_key_with_version}") do
         if product_or_variant.is_a?(Spree::Product)

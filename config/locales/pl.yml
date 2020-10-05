@@ -2,6 +2,7 @@ pl:
   spree:
     go_to_category: go
     homepage:
+      accept: ROZUMIEM I AKCEPTUJĘ
       shop_now: Kup Teraz
       produced_in: Polski producent
       safe_pay: Bezpieczne płatności

@@ -19,7 +19,7 @@
       color: white;
 
       &:hover {
-        text-decoration-color: #003975 !important;
+        color: #003975 !important;
         text-decoration: none;
       }
     }
@@ -31,10 +31,10 @@
 
     &:hover, &.show {
       #{$self}-button {
-        color: white;
         text-decoration: none;
+        color: #003975 !important;
         &:after {
-          border-bottom-color: #003975;
+          // border-bottom-color: #003975;
         }
       }
     }

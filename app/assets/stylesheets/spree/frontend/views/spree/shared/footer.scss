@@ -91,3 +91,11 @@
     }
   }
 }
+
+.cookie_bar {
+  background: white;
+  z-index: 100;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+}
