@@ -9,7 +9,6 @@ Bundler.require(*Rails.groups)
 
 module Bhp
   class Application < Rails::Application
-    config.hosts << "1e6d277f6761.ngrok.io"
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
