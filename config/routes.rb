@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   Spree::Core::Engine.add_routes do
     resources :payu, only: [:index, :create]
     resources :cookie, only: [:create]
-    resources :payu_notify, only: [:create, :index]
+    resources :contact_form, only: [:create]
+
     post 'payment_status', to: "payu#payment_status"
   
     get "/terms-of-service", to: "tos#index", as: :tos
