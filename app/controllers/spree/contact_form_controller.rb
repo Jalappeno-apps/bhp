@@ -6,7 +6,7 @@ module Spree
 
       puts params
       # ContactFormMailer.inquiry_email()
-      redirect_to root_path, flash: { success: { "Dziękujemy za kontakt, wrócimy niebawem z odpowiedzią!" } }
+      redirect_to root_path
     end
   end
 end
