@@ -80,6 +80,16 @@ GIT
       spree_extension
 
 GIT
+  remote: https://github.com/archetype2142/spree_reviews.git
+  revision: d73186fbc391f102f538a71042f2cb284be8efc9
+  branch: master
+  specs:
+    spree_reviews (3.3.0)
+      spree_auth_devise (>= 3.1.0, < 4.5)
+      spree_core (>= 3.1.0, < 4.5)
+      spree_extension
+
+GIT
   remote: https://github.com/archetype2142/spree_simple_sales.git
   revision: 84930467560798e9b49bdfd26596c3a0671fac3c
   specs:
@@ -87,14 +97,6 @@ GIT
       spree_api (>= 3.2.0, < 5.0)
       spree_backend (>= 3.2.0, < 5.0)
       spree_core (>= 3.2.0, < 5.0)
-      spree_extension
-
-PATH
-  remote: /Users/ritwickmalhotra/Desktop/Work/spree_reviews
-  specs:
-    spree_reviews (3.3.0)
-      spree_auth_devise (>= 3.1.0, < 4.5)
-      spree_core (>= 3.1.0, < 4.5)
       spree_extension
 
 GEM

@@ -28,8 +28,8 @@ gem 'spree_auth_devise', '~> 4.2'
 gem 'spree_gateway', '~> 3.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-# gem 'spree_reviews', github: 'archetype2142/spree_reviews', branch: 'master'
-gem 'spree_reviews', path: "/Users/ritwickmalhotra/Desktop/Work/spree_reviews"
+gem 'spree_reviews', github: 'archetype2142/spree_reviews', branch: 'master'
+# gem 'spree_reviews', path: "/Users/ritwickmalhotra/Desktop/Work/spree_reviews"
 gem 'coffee-rails'
 gem 'spree_simple_sales', github: 'archetype2142/spree_simple_sales'
 gem 'slim'
