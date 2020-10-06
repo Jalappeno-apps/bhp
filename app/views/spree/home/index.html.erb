@@ -8,12 +8,10 @@
       alt="<%= Spree.t('homepage.main_banner')%>" />
 
     <div class="hero-content">
-      <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">
-      <%
-=begin%>
-  can do something here
-<%
-=end%>
+      <div class="head-text">
+        <h2 class="mob-small">Twój niezawodny partner biznesowy z artykułami BHP i środkami czystości.</h2>
+
+        <%= image_tag 'custom/rzetelna_firma', class: "mob-hide" %>
       </div>
       <div>
         <%= link_to Spree.t('homepage.shop_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>

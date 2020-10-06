@@ -47,5 +47,6 @@ pl:
         nip: NIP
         company: Nazwa firmy
         message: Wiadomość
-        
+    spree_reviews:
+      show_identifier: Pokaż identyfikator
 
