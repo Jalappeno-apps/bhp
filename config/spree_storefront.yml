@@ -2,19 +2,19 @@ default:
   navigation:
     - title: Ubrania i obuwie robocze
       subtitle: Categories
-      url: /t/women
+      url: /t/ubrania-i-obuwie-robocze
     - title: Taśmy ostrzegawcze
       subtitle: Categories
-      url: /t/men
+      url: /t/tasmy-ostrzegawcze
     - title: Środki czystości Forlux
       subtitle: Categories
-      url: /t/sportswear
+      url: /t/srodki-czystosci-forlux
     - title: Apteczki
       subtitle: Categories
-      url: /t/women
+      url: /t/apteczki
     - title: Ochrona osobista
       subtitle: Categories
-      url: /t/men
+      url: /t/ochrona-osobista
     - title: COVID-19
       subtitle: Categories
-      url: /t/sportswear
+      url: /t/covid-19
