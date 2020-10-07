@@ -17,14 +17,30 @@
   position: relative;
   padding: 2rem;
   
-  @include media-breakpoint-down(md) {
-    background-image: initial;
-    background-color: #c72f43;
-    padding: 10px !important;
-  }
-
   p {
     color: white;
+  }
+
+  .red-banner-text {
+    color: white;
+  }
+
+  .desk-none {
+    display: none
+  }
+  @include media-breakpoint-down(md) {
+    border: 1px solid black;
+    background-image: initial;
+    background-color: transparent;
+    color: black !important;
+    padding: 10px !important;
+
+    p, .red-banner-text {
+      color: black;
+    }
+    .desk-none {
+      display: initial;
+    }
   }
 
   .red-banner-text-align {
@@ -41,10 +57,6 @@
       right: 0;
       top: 10px;
       text-align: center;
-    }
-    
-    .red-banner-text {
-      color: white;
     }
   }
 }
