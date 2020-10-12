@@ -36,8 +36,8 @@ Rails.application.configure do
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
   
   config.public_file_server.headers = {
-    'Cache-Control' => "public, s-maxage=#{365.days.to_i}, maxage=#{180.days.to_i}",
-    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+    'Cache-Control' => 'public, s-maxage=31536000, max-age=15552000',
+    'Expires' => 1.year.from_now.to_formatted_s(:rfc822)
   }
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
