@@ -18,9 +18,9 @@ module Spree
       order = Order.find_by(number: params["order"])
 
       if order
-        redirect_to order_path(order), flash: { success: "Order completed" }
+        redirect_to order_path(order), flash: { success: "Dziękujemy za zamówienie, prosimy o sprawdzenie skrzynki email" }
       else
-        redirect_to root_path, flash: { error: "Order failed" }
+        redirect_to root_path, flash: { error: "Przykro nam, Twoje zamówienie się nie powiodło, prosimy o kontakt" }
       end
     end
 

@@ -3,15 +3,15 @@ default:
     - title: Ubrania i obuwie robocze
       subtitle: Categories
       url: /t/ubrania-i-obuwie-robocze
-    - title: Taśmy ostrzegawcze
+    - title: Rękawice ochronne
       subtitle: Categories
-      url: /t/tasmy-ostrzegawcze
+      url: /t/rekawice-ochronne
     - title: Środki czystości Forlux
       subtitle: Categories
       url: /t/srodki-czystosci-forlux
-    - title: Apteczki
+    - title: Apteczki i taśmy ostrzegawcze
       subtitle: Categories
-      url: /t/apteczki
+      url: /t/tasmy-ostrzegawcze
     - title: Ochrona osobista
       subtitle: Categories
       url: /t/ochrona-osobista
