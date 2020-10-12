@@ -33,8 +33,12 @@ Rails.application.configure do
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
-  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
-
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
+  
+  config.public_file_server.headers = {
+    'Cache-Control' => "public, s-maxage=#{365.days.to_i}, maxage=#{180.days.to_i}",
+    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+  }
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
@@ -91,7 +95,7 @@ Rails.application.configure do
   
   config.action_mailer.perform_deliveries = true
   # config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { host: "bhpartykuly.pl/" }
+  config.action_mailer.default_url_options = { host: "bhpartykuly.pl" }
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
     user_name: ENV['SMTP_USERNAME'],
