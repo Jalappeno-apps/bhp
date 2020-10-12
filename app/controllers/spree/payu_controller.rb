@@ -14,6 +14,16 @@ module Spree
       redirect_to redirect
     end
 
+    def store_return
+      order = Order.find_by(number: params["order"])
+
+      if order
+        redirect_to order_path(order), flash: { success: "Order completed" }
+      else
+        redirect_to root_path, flash: { error: "Order failed" }
+      end
+    end
+
     def payment_status
       order = Order.find_by(number: params["order"])
       begin

@@ -16,7 +16,8 @@ Rails.application.routes.draw do
     resources :payu_notify, only: [:create, :index]
 
     post 'payment_status', to: "payu#payment_status"
-  
+    get 'store_return', to: "payu#store_return"
+
     get "/terms-of-service", to: "tos#index", as: :tos
   end
 end

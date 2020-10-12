@@ -25,7 +25,8 @@ class PayuCreateOrder
           "lastName": order.shipping_address.lastname
         },
         "products": all_products,
-        "redirectUri": "https://zabijawirusy.pl/store_return"
+        "redirectUri": "http://bhpartykuly.pl/store_return",
+        "continueUrl": "http://bhpartykuly.pl/store_return/?order=#{order.number}"
       })
 
       # Create the HTTP objects
