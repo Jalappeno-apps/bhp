@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :payu, only: [:index, :create]
     resources :cookie, only: [:create]
     resources :contact_form, only: [:create]
+    resources :payu_notify, only: [:create, :index]
 
     post 'payment_status', to: "payu#payment_status"
   
