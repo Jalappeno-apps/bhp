@@ -397,7 +397,7 @@
         }
         @include media-breakpoint-up(lg) {
           font-size: font-px-to-rem(26px);
-          line-height: 0.65;
+          line-height: 1;
           letter-spacing: 0.65px;
           margin-bottom: 35px;
         }
