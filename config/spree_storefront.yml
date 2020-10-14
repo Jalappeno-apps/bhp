@@ -5,33 +5,33 @@ default:
       url: /t/ubrania-i-obuwie-robocze
       items:
         - :title: Odzież Robocza
-          :url: /t/odziez-robocza
+          :url: /t/ubrania-i-obuwie-robocze/odziez-robocza
           subitems:
             - :title: Ubrania robocze
-              :url: /t/ubrania-robocze 
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/ubrania-robocze 
             - :title: Ubrania robocze ocieplane
-              :url: /t/ubrania-robocze-ocieplana
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/ubrania-robocze-ocieplana
             - :title: Koszule, koszulki, fartuchy
-              :url: /t/koszule-koszulki-fartuchy
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/koszule-koszulki-fartuchy
             - :title: Kurtki, kamizelki, polary
-              :url: /t/kurtki-kamizelki-polary
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/kurtki-kamizelki-polary
             - :title: Odzież przeciwdeszczowa
-              :url: /t/odziez-przeciwdeszczowa
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/odziez-przeciwdeszczowa
             - :title: Odzież odblaskowa i ostrzegawcza
-              :url: /t/odziez-odblaskowa-i-ostrzegawcza
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/odziez-odblaskowa-i-ostrzegawcza
         - :title: Obuwie Robocze
-          :url: /t/obuwie-robocze
+          :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze
           subitems:
             - :title: Trzewiki robocze
-              :url: /t/trzewiki-robocze
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/trzewiki-robocze
             - :title: Trzewiki robocze ocieplane
-              :url: /t/trzewiki-robocze-ocieplane
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/trzewiki-robocze-ocieplane
             - :title: Półbut, sandał
-              :url: /t/polbut-sandal
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/polbut-sandal
             - :title: Buty gumowe i pozostałe
-              :url: /t/buty-gumowe-i-pozostale
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/buty-gumowe-i-pozostale
             - :title: Obuwie profilaktyczne
-              :url: /t/obuwie-profilaktyczne
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/obuwie-profilaktyczne
     - title: Rękawice ochronne
       subtitle: Categories
       url: /t/rekawice-ochronne
