@@ -33,17 +33,80 @@ default:
             - :title: Obuwie profilaktyczne
               :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/obuwie-profilaktyczne
     - title: Rękawice ochronne
-      subtitle: Categories
+      subtitle: Rękawice ochronne
       url: /t/rekawice-ochronne
+      items:
+        subitems:
+          - title: Rękawice ochronne powlekane
+            url: /t/rekawice-ochronne/rekawice-ochronne-powlekane
+          - title: Rękawice skórzane i wzmacniane skórą
+            url: /t/rekawice-ochronne/rekawice-skorzane-i-wzmacniane-skora
+          - title: Rękawice ocieplane
+            url: /t/rekawice-ochronne/rekawice-ocieplane
+          - title: Rękawice antyprzecięciowe antywibracyjne
+            url: /t/rekawice-ochronne/rekawice-antyprzecieciowe-antywibracyjne
+          - title: Rękawice gumowe oraz z tworzyw
+            url: /t/rekawice-ochronne/rekawice-gumowe-oraz-z-tworzyw
+          - title: Rękawice dziane, tkaninowe
+            url: /t/rekawice-ochronne/rekawice-dziane-tkaninowe
     - title: Środki czystości Forlux
-      subtitle: Categories
+      subtitle: Środki czystości Forlux
       url: /t/srodki-czystosci-forlux
+      items:
+        subitems:
+          - title: Powierzchnie zmywalne
+            url: /t/srodki-czystosci-forlux/powierzchnie-zmywalne
+          - title: Sanitariaty
+            url: /t/srodki-czystosci-forlux/sanitariaty
+          - title: Kuchnie
+            url: /t/srodki-czystosci-forlux/kuchnie
+          - title: Higiena rąk
+            url: /t/srodki-czystosci-forlux/higiena-rak
+          - title: Specjalistyczne
+            url: /t/srodki-czystosci-forlux/specjalistyczne
+          - title: Artykuły higieniczne papiery i inne
+            url: /t/srodki-czystosci-forlux/artykuly-higieniczne-papiery-i-inne
+          - title: Dozowniki
+            url: /t/srodki-czystosci-forlux/dozowniki
+          - title: Odświeżacze powietrza
+            url: /t/srodki-czystosci-forlux/odswiezacze-powietrza
     - title: Apteczki i taśmy ostrzegawcze
-      subtitle: Categories
-      url: /t/tasmy-ostrzegawcze
+      subtitle: Apteczki i taśmy ostrzegawcze
+      url: /t/apteczki-i-tasmy-ostrzegawcze
+      items:
+        subitems:
+          - title: Apteczki
+            url: /t/apteczki-i-tasmy-ostrzegawcze/apteczki
+          - title: Taśmy ostrzegawcze
+            url: /t/apteczki-i-tasmy-ostrzegawcze/tasmy-ostrzegawcze
     - title: Ochrona osobista
-      subtitle: Categories
+      subtitle: Ochrona osobista
       url: /t/ochrona-osobista
+      items:
+        subitems:
+          - title: Ochrona głowy
+            url: /t/ochrona-osobista/ochrona-glowy
+          - title: Ochrona słuchu
+            url: /t/ochrona-osobista/ochrona-sluchu
+          - title: Ochrona oczu
+            url: /t/ochrona-osobista/ochrona-oczu
+          - title: Ochrona dróg oddechowych
+            url: /t/ochrona-osobista/ochrona-drog-oddechowych
+          - title: Ochrona przed upadkiem z wysokości
+            url: /t/ochrona-osobista/ochrona-przed-upadkiem-z-wysokosci
     - title: COVID-19
-      subtitle: Categories
+      subtitle: Covid-19
       url: /t/covid-19
+      items:
+        subitems:
+          - title: Dezynfekcja
+            url: /t/covid-19/dezynfekcja
+          - title: Odzież jednorazowa
+            url: /t/covid-19/odziez-jednorazowa
+          - title: Maski ochronne
+            url: /t/covid-19/maski-ochronne
+          - title: Przyłbice
+            url: /t/covid-19/przylbice
+
+
+      
