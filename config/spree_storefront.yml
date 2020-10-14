@@ -1,8 +1,37 @@
 default:
   navigation:
     - title: Ubrania i obuwie robocze
-      subtitle: Categories
+      subtitle: Ubrania i obuwie robocze
       url: /t/ubrania-i-obuwie-robocze
+      items:
+        - :title: Odzież Robocza
+          :url: /t/odziez-robocza
+          subitems:
+            - :title: Ubrania robocze
+              :url: /t/ubrania-robocze 
+            - :title: Ubrania robocze ocieplane
+              :url: /t/ubrania-robocze-ocieplana
+            - :title: Koszule, koszulki, fartuchy
+              :url: /t/koszule-koszulki-fartuchy
+            - :title: Kurtki, kamizelki, polary
+              :url: /t/kurtki-kamizelki-polary
+            - :title: Odzież przeciwdeszczowa
+              :url: /t/odziez-przeciwdeszczowa
+            - :title: Odzież odblaskowa i ostrzegawcza
+              :url: /t/odziez-odblaskowa-i-ostrzegawcza
+        - :title: Obuwie Robocze
+          :url: /t/obuwie-robocze
+          subitems:
+            - :title: Trzewiki robocze
+              :url: /t/trzewiki-robocze
+            - :title: Trzewiki robocze ocieplane
+              :url: /t/trzewiki-robocze-ocieplane
+            - :title: Półbut, sandał
+              :url: /t/polbut-sandal
+            - :title: Buty gumowe i pozostałe
+              :url: /t/buty-gumowe-i-pozostale
+            - :title: Obuwie profilaktyczne
+              :url: /t/obuwie-profilaktyczne
     - title: Rękawice ochronne
       subtitle: Categories
       url: /t/rekawice-ochronne

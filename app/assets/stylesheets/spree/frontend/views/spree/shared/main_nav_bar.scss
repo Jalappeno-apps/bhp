@@ -1,6 +1,7 @@
 .main-nav-bar {
   display: flex;
   justify-content: space-evenly;
+  position: relative;
   
   @include media-breakpoint-down(md) {
     display: -webkit-inline-box;
@@ -56,6 +57,9 @@
       display: flex;
       align-items: center;
       position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
       &:after {
         content: '';
         display: block;
@@ -71,13 +75,11 @@
     }
 
     &-dropdown {
-      padding: 51px 0px 51px 0px;
       min-height: 341px;
       left: 0;
       right: 0;
-      width: 100%;
       position: absolute;
-      top: $spree-header-mobile-height;
+      top: 62px;
       margin: 0;
       border: none;
       z-index: 1000;
@@ -109,7 +111,7 @@
       }
 
       @include media-breakpoint-up(xl) {
-        top: $spree-header-desktop-height - 1px;
+        top: 62px;
       }
     }
   }
