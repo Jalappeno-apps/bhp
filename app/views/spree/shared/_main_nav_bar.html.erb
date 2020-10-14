@@ -1,3 +1,9 @@
+<style>
+  .sub-menu {
+    display: none;
+  }
+</style>
+<% fresh_items = spree_navigation_data.map{ |item| raw item[:items].map { |el| el[:url]} } %>
 <% if spree_navigation_data.any? %>
   <div class="h-100 w-100" role="navigation">
     <ul class="nav h-100 main-nav-bar w-100 d-flex nav h-100 main-nav-bar">
@@ -11,22 +17,37 @@
           <% if has_dropdown %>
             <div class="dropdown-menu w-100 shadow main-nav-bar-category-dropdown">
               <div class="p-5">
-                <div class="row">
+                <div class="row" style="justify-content: space-between;">
                   <% if root[:items].present? %>
                     <div class="category-links">
                       <% if root[:subtitle].present? %>
                         <div class="">
-                          Kategorie w dziale: <b><%= root[:subtitle] %></b>
+                          <h2 style="color: #EC003B"><%= root[:subtitle] %></h2>
                         </div>
                       <% end %>
                       <ul class="pl-0">
                         <% root[:items].each do |item| %>
-                          <li>
+                          <li id="<%= item[:url] %>">
                             <%= link_to item[:title], item[:url], class: "text-uppercase main-nav-bar-category-links dropdown-item" %>
                           </li>
                         <% end %>
                       </ul>
                     </div>
+                    <% if root[:items].present? %>
+                      <% root[:items].each do |item| %>
+                        <% if item[:subitems].present? %>
+                          <div class="category-links sub-menu" id='<%= "#{item[:url]}-submenu" %>'>
+                            <ul class="pl-0">
+                              <% item[:subitems].each do |subitem| %>
+                                <li>
+                                  <%= link_to subitem[:title], item[:url], class: "text-uppercase main-nav-bar-category-links dropdown-item" %>
+                                </li>
+                              <% end %>
+                            </ul>
+                          </div>
+                        <% end %>                                                          
+                      <% end %>
+                    <% end %>
                   <% end %>
                   <% if root[:promo_banners].present? %>
                     <% root[:promo_banners].each do |promo_banner| %>
@@ -54,3 +75,22 @@
     </ul>
   </div>
 <% end %>
+
+<script>
+  var elements = '<%= raw fresh_items %>'
+  elements = elements.replace(/"|\[|\]/gi, '').split(", ")
+  elements.forEach(function(element) {
+    document.getElementById(element).addEventListener("mouseover", function( event ) {
+      var sub_menu = element + "-submenu"
+      document.getElementById(sub_menu).style.display = "initial";
+      console.log()
+    })
+
+    document.getElementById(element).addEventListener("mouseout", function( event ) {
+      var sub_menu = element + "-submenu"
+      document.getElementById(sub_menu).style.display = "none";
+      console.log()
+    })
+  })
+  console.log(elements );
+</script>

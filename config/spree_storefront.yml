@@ -32,6 +32,11 @@ default:
               :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/buty-gumowe-i-pozostale
             - :title: Obuwie profilaktyczne
               :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/obuwie-profilaktyczne
+      promo_banners:
+        - subtitle: Ubrania i obuwie robocze
+          title: Sprawdź okazje!
+          url: /t/ubrania-i-obuwie-robocze/odziez-robocza
+          image: 'meganav/ubrania_i_obuwie_robocze.jpg'
     - title: Rękawice ochronne
       subtitle: Rękawice ochronne
       url: /t/rekawice-ochronne
@@ -48,6 +53,11 @@ default:
           url: /t/rekawice-ochronne/rekawice-gumowe-oraz-z-tworzyw
         - title: Rękawice dziane, tkaninowe
           url: /t/rekawice-ochronne/rekawice-dziane-tkaninowe
+      promo_banners:
+        - subtitle: Rękawice ochronne
+          title: Sprawdź okazje!
+          url: /t/rekawice-ochronne/rekawice-ochronne
+          image: 'meganav/rekawice_ochronne.jpg'
     - title: Środki czystości Forlux
       subtitle: Środki czystości Forlux
       url: /t/srodki-czystosci-forlux
@@ -68,6 +78,11 @@ default:
           url: /t/srodki-czystosci-forlux/dozowniki
         - title: Odświeżacze powietrza
           url: /t/srodki-czystosci-forlux/odswiezacze-powietrza
+      promo_banners:
+        - subtitle: Śroki czystości Forlux
+          title: Sprawdź okazje!
+          url: /t/srodki-czystosci-forlux/powierzchnie-zmywalne
+          image: 'meganav/srodki_czystosci_forlux.jpg'
     - title: Apteczki i taśmy ostrzegawcze
       subtitle: Apteczki i taśmy ostrzegawcze
       url: /t/apteczki-i-tasmy-ostrzegawcze
@@ -76,6 +91,11 @@ default:
           url: /t/apteczki-i-tasmy-ostrzegawcze/apteczki
         - title: Taśmy ostrzegawcze
           url: /t/apteczki-i-tasmy-ostrzegawcze/tasmy-ostrzegawcze
+      promo_banners:
+        - subtitle: Apteczki i taśmy ostrzegawcze
+          title: Sprawdź okazje!
+          url: /t/apteczki-i-tasmy-ostrzegawcze
+          image: 'meganav/apteczki_i_tasmy_ostrzegawcze.jpg'
     - title: Ochrona osobista
       subtitle: Ochrona osobista
       url: /t/ochrona-osobista
@@ -90,6 +110,11 @@ default:
           url: /t/ochrona-osobista/ochrona-drog-oddechowych
         - title: Ochrona przed upadkiem z wysokości
           url: /t/ochrona-osobista/ochrona-przed-upadkiem-z-wysokosci
+      promo_banners:
+        - subtitle: Ochrona osobista
+          title: Sprawdź okazje!
+          url: /t/ochrona-osobista
+          image: 'meganav/ochrona_osobista.jpg'
     - title: COVID-19
       subtitle: Covid-19
       url: /t/covid-19
@@ -102,3 +127,8 @@ default:
           url: /t/covid-19/maski-ochronne
         - title: Przyłbice
           url: /t/covid-19/przylbice
+      promo_banners:
+        - subtitle: Covid-19
+          title: Sprawdź okazje!
+          url: /t/dezynfekcja
+          image: 'meganav/covid_19.jpg'
