@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_12_073705) do
+ActiveRecord::Schema.define(version: 2020_10_15_173314) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 2020_10_12_073705) do
     t.integer "user_id"
     t.datetime "deleted_at"
     t.string "label"
+    t.string "nip"
     t.index ["country_id"], name: "index_spree_addresses_on_country_id"
     t.index ["deleted_at"], name: "index_spree_addresses_on_deleted_at"
     t.index ["firstname"], name: "index_addresses_on_firstname"
@@ -1035,6 +1036,7 @@ ActiveRecord::Schema.define(version: 2020_10_12_073705) do
     t.string "contact_phone"
     t.string "contact_email"
     t.string "new_order_notifications_email"
+    t.string "seo_robots"
     t.index "lower((code)::text)", name: "index_spree_stores_on_lower_code", unique: true
     t.index ["default"], name: "index_spree_stores_on_default"
     t.index ["url"], name: "index_spree_stores_on_url"

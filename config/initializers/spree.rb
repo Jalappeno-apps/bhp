@@ -13,6 +13,7 @@ Spree.config do |config|
   config.logo = "custom/logo.svg"
   config.admin_interface_logo = "custom/logo.svg"
   config.currency = "PLN"
+  config.company = true
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -38,3 +39,4 @@ Spree::Frontend::Config[:locale] = :pl
 # Spree::Backend::Config[:locale] = :pl
 
 Rails.application.config.spree.payment_methods << Spree::PaymentMethod::Payu
+Spree::PermittedAttributes.address_attributes << :nip
