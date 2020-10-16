@@ -3,7 +3,8 @@
     display: none;
   }
 </style>
-<% fresh_items = spree_navigation_data.map{ |item| raw item[:items].map { |el| el[:url]} } %>
+<% nav_items = spree_navigation_data.map{ |item| raw item[:items].map { |el| el[:url]} } %>
+
 <% if spree_navigation_data.any? %>
   <div class="h-100 w-100" role="navigation">
     <ul class="nav h-100 main-nav-bar w-100 d-flex nav h-100 main-nav-bar">
@@ -77,20 +78,33 @@
 <% end %>
 
 <script>
-  var elements = '<%= raw fresh_items %>'
+  var elements = '<%= raw nav_items %>'
   elements = elements.replace(/"|\[|\]/gi, '').split(", ")
+  var visible = null;
+  var visible_new = null;
+
   elements.forEach(function(element) {
     document.getElementById(element).addEventListener("mouseover", function( event ) {
-      var sub_menu = element + "-submenu"
-      document.getElementById(sub_menu).style.display = "initial";
-      console.log()
-    })
+      var sub_menu = element + "-submenu";
+      visible_new = document.getElementById(sub_menu);
+      visible_new.style.display = "initial";
 
-    document.getElementById(element).addEventListener("mouseout", function( event ) {
-      var sub_menu = element + "-submenu"
-      document.getElementById(sub_menu).style.display = "none";
-      console.log()
+      if(visible == null) {
+        visible = visible_new;
+      } 
+
+      if(visible != visible_new) {
+        visible.style.display = "none";
+      }
+      
+      visible = visible_new;
+      console.log(visible_new.style.display);
     })
   })
   console.log(elements );
 </script>
+
+
+
+
+

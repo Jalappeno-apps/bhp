@@ -1,5 +1,5 @@
 <% unless cookies["cookie"] %>
-  <div class="w-100 cookie_bar p-4 border-top">
+  <div class="w-100 cookie_bar p-4 border-top" id="cookie_bar" >
     <div class="container">
       <div class="row">
         <div class="col-md-8">
@@ -19,7 +19,7 @@
         <div class="col-md-4 d-flex justify-content-center align-items-center">
 
           <%= form_with url: cookie_index_path, method: :post, remote: true do |f|%>
-            <%= f.submit Spree.t('homepage.accept'), class: 'btn btn-primary spree-btn px-3', style: "font-size: 1rem !important" %>
+            <%= f.submit Spree.t('homepage.accept'), class: 'btn btn-primary spree-btn px-3', style: "font-size: 1rem !important", id: "cookie_bar_button" %>
           <% end %>
         </div>
       </div>
@@ -28,6 +28,13 @@
 <% end %>
 
 <script>
+  var bar = document.getElementById('cookie_bar');
+  var button = document.getElementById('cookie_bar_button');
+
+  button.addEventListener('click', function(event) {
+    bar.style.display = 'none';
+  });
+
   function getCookie( name ) {
     var dc,
         prefix,
@@ -62,4 +69,5 @@
   if(getCookie("cookie") == "true") {
     document.getElementsByClassName("cookie_bar")[0].style.display = "none";
   }
+
 </script>
