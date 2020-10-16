@@ -35,7 +35,7 @@ default:
       promo_banners:
         - subtitle: Ubrania i obuwie robocze
           title: Sprawdź okazje!
-          url: /t/ubrania-i-obuwie-robocze/odziez-robocza
+          url: /t/ubrania-i-obuwie-robocze/
           image: 'meganav/ubrania_i_obuwie_robocze.jpg'
     - title: Rękawice ochronne
       subtitle: Rękawice ochronne
@@ -56,7 +56,7 @@ default:
       promo_banners:
         - subtitle: Rękawice ochronne
           title: Sprawdź okazje!
-          url: /t/rekawice-ochronne/rekawice-ochronne
+          url: /t/rekawice-ochronne/
           image: 'meganav/rekawice_ochronne.jpg'
     - title: Środki czystości Forlux
       subtitle: Środki czystości Forlux
@@ -81,7 +81,7 @@ default:
       promo_banners:
         - subtitle: Śroki czystości Forlux
           title: Sprawdź okazje!
-          url: /t/srodki-czystosci-forlux/powierzchnie-zmywalne
+          url: /t/srodki-czystosci-forlux/
           image: 'meganav/srodki_czystosci_forlux.jpg'
     - title: Apteczki i taśmy ostrzegawcze
       subtitle: Apteczki i taśmy ostrzegawcze
@@ -130,5 +130,5 @@ default:
       promo_banners:
         - subtitle: Covid-19
           title: Sprawdź okazje!
-          url: /t/dezynfekcja
+          url: /t/covid-19
           image: 'meganav/covid_19.jpg'

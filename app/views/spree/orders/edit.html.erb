@@ -41,6 +41,8 @@
                   <%= order_form.object.display_item_total %>
                 </div>
               </div>
+              <span class="text-muted">+ dostawa</span>
+
               <% if !order_form.object.cart_promo_total.zero? %>
                 <div class="row no-gutters align-items-center">
                   <div class="text-uppercase shopping-cart-total-text col-8 mr-0">
@@ -68,7 +70,8 @@
                 </div>
                 <div class="shopping-cart-total-amount col align-self-end">
                   <%= order_form.object.display_item_total %>
-                </div>
+                </div></br>
+                <span class="text-muted">+ dostawa</span>
               </div>
               <% if !order_form.object.cart_promo_total.zero? %>
                 <div class="row no-gutters align-items-center">
@@ -77,7 +80,8 @@
                   </div>
                   <div class="shopping-cart-total-amount col align-self-end">
                     <%= order_form.object.display_cart_promo_total %>
-                  </div>
+                  </div></br>
+                  <span class="text-muted">+ dostawa</span>
                 </div>
               <% end %>
             </div>
