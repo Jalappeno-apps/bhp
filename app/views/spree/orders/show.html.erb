@@ -16,19 +16,19 @@
     <%= accurate_title %> / <%= @order.completed_at.to_date.to_s(:long) %>
   </p>
   <dl class="w-100 d-lg-flex justify-content-lg-between">
-    <div class="mr-3">
+    <div class="col-md-3">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:shipping_address) %></dt>
       <dd class="text-center text-lg-left">
         <%= render 'spree/shared/address', address: @order.ship_address %>
       </dd>
     </div>
-    <div class="mr-3">
+    <div class="col-md-3">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:billing_address) %></dt>
       <dd class="text-center text-lg-left">
         <%= render 'spree/shared/address', address: @order.bill_address %>
       </dd>
     </div>
-    <div class="mr-5">
+    <div class="col-md-3">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:shipping) %></dt>
       <% @order.shipments.valid.each do |shipment| %>
         <dd class="text-center text-lg-left">
@@ -37,7 +37,7 @@
         </dd>
       <% end %>
     </div>
-    <div class="ml-5">
+    <div class="col-md-3">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:payment) %></dt>
       <dd class="text-center text-lg-left">
         <%= render collection: @order.payments.valid, partial: 'spree/shared/payment' %>
