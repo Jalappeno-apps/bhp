@@ -26,6 +26,8 @@ Spree.loadsCarouselElements = function () {
   document.querySelectorAll('div[data-product-carousel]').each(function (_index, element) { Spree.loadCarousel(element, this) })
 }
 
+Spree.loadsCarouselElements()
+
 document.addEventListener('turbolinks:load', function () {
   var homePage = $('body#home')
 
