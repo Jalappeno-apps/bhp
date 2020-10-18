@@ -1,3 +1,8 @@
+<!-- <style>
+  .margin-bw-items div {
+    margin-right: 5px;
+  }
+</style> -->
 <div class='order-show container d-flex flex-column align-items-center flex-lg-wrap flex-lg-row justify-content-center' id="order_summary" data-hook>
   <% if order_just_completed?(@order) %>
     <%= icon(name: 'check-mark-circle',
@@ -16,19 +21,19 @@
     <%= accurate_title %> / <%= @order.completed_at.to_date.to_s(:long) %>
   </p>
   <dl class="w-100 d-lg-flex justify-content-lg-between">
-    <div>
+    <div class="mr-5">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:shipping_address) %></dt>
       <dd class="text-center text-lg-left">
         <%= render 'spree/shared/address', address: @order.ship_address %>
       </dd>
     </div>
-    <div>
+    <div class="mr-5">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:billing_address) %></dt>
       <dd class="text-center text-lg-left">
         <%= render 'spree/shared/address', address: @order.bill_address %>
       </dd>
     </div>
-    <div>
+    <div class="mr-5">
       <dt class="text-uppercase text-center text-lg-left"><%= Spree.t(:shipping) %></dt>
       <% @order.shipments.valid.each do |shipment| %>
         <dd class="text-center text-lg-left">
