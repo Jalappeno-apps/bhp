@@ -10,7 +10,7 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-  config.logo = "custom/logo.svg"
+  config.logo = "custom/logo"
   config.admin_interface_logo = "custom/logo.svg"
   config.currency = "PLN"
   config.company = true

@@ -67,7 +67,7 @@ GIT
 
 GIT
   remote: https://github.com/archetype2142/spree_i18n.git
-  revision: 2b054ebba31c73556137d13659df1f63f8a8f678
+  revision: ef20725db26e05005e30496363dc3a223ad2a4c6
   branch: master
   specs:
     spree_i18n (3.3.2)
