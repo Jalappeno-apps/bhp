@@ -1,5 +1,17 @@
 pl:
   spree:
+    order_mailer:
+      subtotal: Wartość zamówionych produktów brutto
+      total: Razem zapłacono
+      confirm_email:
+        subtotal: Wartość zamówionych produktów brutto
+        total: Razem zapłacono
+        worker_instructions: Potwierdzenie zamówienia
+        instructions: Oto potwierdzenie zamówienia
+        dear_worker: Szanowni Państwo
+        dear_customer: Szanowny kliencie!
+        order_summary: Szczegóły
+        store_team: Sklep BHPartykuly.pl
     go_to_category: go
     homepage:
       accept: ROZUMIEM I AKCEPTUJĘ
