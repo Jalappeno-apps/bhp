@@ -28,7 +28,6 @@
 <% end %>
 
 <script>
-  Spree.loadsCarouselElements()
   var bar = document.getElementById('cookie_bar');
   var button = document.getElementById('cookie_bar_button');
 
@@ -70,5 +69,5 @@
   if(getCookie("cookie") == "true") {
     document.getElementsByClassName("cookie_bar")[0].style.display = "none";
   }
-
+  Spree.loadsCarouselElements()
 </script>
