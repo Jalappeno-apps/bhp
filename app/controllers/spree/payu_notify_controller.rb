@@ -2,7 +2,8 @@
 
 module Spree
   class PayuNotifyController < Spree::BaseController
-    protect_from_forgery
+    protect_from_forgery except: :create
+    skip_before_action :verify_authenticity_token
     before_action :order, only: :create
 
     def index; end
