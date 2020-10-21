@@ -144,9 +144,11 @@
       body: JSON.stringify({
         variant_id: variant_id,
         quantity: quantity,
+        options: {},
         cart: {
           variant_id: variant_id,
-          quantity: quantity
+          quantity: quantity,
+          options: {}
         }
       })
     }).then(response => response.json()).then(data => {

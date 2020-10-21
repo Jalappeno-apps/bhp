@@ -9,7 +9,7 @@ module Spree
     def index; end
 
     def create
-      return unless order 
+      return unless order
       order.update!(pay_order_id: params["order"]["orderId"]) unless order&.payu_order_id
       payment = order&.payments&.last
 
