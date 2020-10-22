@@ -18,10 +18,12 @@ class PayuCheckStatus
       response_parsed = JSON.parse(response.body)
       status = response_parsed["orders"][0]["status"]
       payment = order.payments.last
-      if status == "completed"
+      if status == "COMPLETED"
         payment.complete! unless payment.completed?
-      elsif status == "pending"
+      elsif status == "PENDING"
         payment.update!(status: "processing") unless payment.processing?
+      elsif status == "CANCELLED"
+        order.cancel
       end
     end  
   end
