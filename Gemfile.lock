@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/archetype2142/spree.git
-  revision: 2068bad0fed63045ec44ef14ce04aa2e61d7a9d0
+  revision: 89ada340f20a64dcb9a2728efe8cc2b7dcdd11d7
   branch: master
   specs:
     spree (4.2.0.rc1)
@@ -396,8 +396,9 @@ GEM
     spree_extension (0.0.9)
       activerecord (>= 4.2)
       spree_core
-    spree_gateway (3.8.0)
-      spree_core (>= 3.1.0, < 5.0)
+    spree_gateway (3.9.0)
+      deface
+      spree_core (>= 3.7.0, < 5.0)
       spree_extension
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
