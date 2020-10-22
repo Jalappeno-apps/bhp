@@ -1,0 +1,134 @@
+default:
+  navigation:
+    - title: Ubrania i obuwie robocze
+      subtitle: Ubrania i obuwie robocze
+      url: /t/ubrania-i-obuwie-robocze
+      items:
+        - :title: Odzież Robocza
+          :url: /t/ubrania-i-obuwie-robocze/odziez-robocza
+          subitems:
+            - :title: Ubrania robocze
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/ubrania-robocze 
+            - :title: Ubrania robocze ocieplane
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/ubrania-robocze-ocieplana
+            - :title: Koszule, koszulki, fartuchy
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/koszule-koszulki-fartuchy
+            - :title: Kurtki, kamizelki, polary
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/kurtki-kamizelki-polary
+            - :title: Odzież przeciwdeszczowa
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/odziez-przeciwdeszczowa
+            - :title: Odzież odblaskowa i ostrzegawcza
+              :url: /t/ubrania-i-obuwie-robocze/odziez-robocza/odziez-odblaskowa-i-ostrzegawcza
+        - :title: Obuwie Robocze
+          :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze
+          subitems:
+            - :title: Trzewiki robocze
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/trzewiki-robocze
+            - :title: Trzewiki robocze ocieplane
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/trzewiki-robocze-ocieplane
+            - :title: Półbut, sandał
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/polbut-sandal
+            - :title: Buty gumowe i pozostałe
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/buty-gumowe-i-pozostale
+            - :title: Obuwie profilaktyczne
+              :url: /t/ubrania-i-obuwie-robocze/obuwie-robocze/obuwie-profilaktyczne
+      promo_banners:
+        - subtitle: Ubrania i obuwie robocze
+          title: Sprawdź okazje!
+          url: /t/ubrania-i-obuwie-robocze/odziez-robocza
+          image: 'meganav/ubrania_i_obuwie_robocze.jpg'
+    - title: Rękawice ochronne
+      subtitle: Rękawice ochronne
+      url: /t/rekawice-ochronne
+      items:
+        - title: Rękawice ochronne powlekane
+          url: /t/rekawice-ochronne/rekawice-ochronne-powlekane
+        - title: Rękawice skórzane i wzmacniane skórą
+          url: /t/rekawice-ochronne/rekawice-skorzane-i-wzmacniane-skora
+        - title: Rękawice ocieplane
+          url: /t/rekawice-ochronne/rekawice-ocieplane
+        - title: Rękawice antyprzecięciowe antywibracyjne
+          url: /t/rekawice-ochronne/rekawice-antyprzecieciowe-antywibracyjne
+        - title: Rękawice gumowe oraz z tworzyw
+          url: /t/rekawice-ochronne/rekawice-gumowe-oraz-z-tworzyw
+        - title: Rękawice dziane, tkaninowe
+          url: /t/rekawice-ochronne/rekawice-dziane-tkaninowe
+      promo_banners:
+        - subtitle: Rękawice ochronne powlekane
+          title: Sprawdź okazje!
+          url: /t/rekawice-ochronne/rekawice-ochronne-powlekane
+          image: 'meganav/rekawice_ochronne_powlekane.jpg'
+    - title: Środki czystości Forlux
+      subtitle: Środki czystości Forlux
+      url: /t/srodki-czystosci-forlux
+      items:
+        - title: Powierzchnie zmywalne
+          url: /t/srodki-czystosci-forlux/powierzchnie-zmywalne
+        - title: Sanitariaty
+          url: /t/srodki-czystosci-forlux/sanitariaty
+        - title: Kuchnie
+          url: /t/srodki-czystosci-forlux/kuchnie
+        - title: Higiena rąk
+          url: /t/srodki-czystosci-forlux/higiena-rak
+        - title: Specjalistyczne
+          url: /t/srodki-czystosci-forlux/specjalistyczne
+        - title: Artykuły higieniczne papiery i inne
+          url: /t/srodki-czystosci-forlux/artykuly-higieniczne-papiery-i-inne
+        - title: Dozowniki
+          url: /t/srodki-czystosci-forlux/dozowniki
+        - title: Odświeżacze powietrza
+          url: /t/srodki-czystosci-forlux/odswiezacze-powietrza
+      promo_banners:
+        - subtitle: Śroki czystości Forlux
+          title: Sprawdź okazje!
+          url: /t/srodki-czystosci-forlux/powierzchnie-zmywalne
+          image: 'meganav/srodki_czystosci_forlux.jpg'
+    - title: Apteczki i taśmy ostrzegawcze
+      subtitle: Apteczki i taśmy ostrzegawcze
+      url: /t/apteczki-i-tasmy-ostrzegawcze
+      items:
+        - title: Apteczki
+          url: /t/apteczki-i-tasmy-ostrzegawcze/apteczki
+        - title: Taśmy ostrzegawcze
+          url: /t/apteczki-i-tasmy-ostrzegawcze/tasmy-ostrzegawcze
+      promo_banners:
+        - subtitle: Apteczki i taśmy ostrzegawcze
+          title: Sprawdź okazje!
+          url: /t/apteczki-i-tasmy-ostrzegawcze
+          image: 'meganav/apteczki_i_tasmy_ostrzegawcze.jpg'
+    - title: Ochrona osobista
+      subtitle: Ochrona osobista
+      url: /t/ochrona-osobista
+      items:
+        - title: Ochrona głowy
+          url: /t/ochrona-osobista/ochrona-glowy
+        - title: Ochrona słuchu
+          url: /t/ochrona-osobista/ochrona-sluchu
+        - title: Ochrona oczu
+          url: /t/ochrona-osobista/ochrona-oczu
+        - title: Ochrona dróg oddechowych
+          url: /t/ochrona-osobista/ochrona-drog-oddechowych
+        - title: Ochrona przed upadkiem z wysokości
+          url: /t/ochrona-osobista/ochrona-przed-upadkiem-z-wysokosci
+      promo_banners:
+        - subtitle: Ochrona osobista
+          title: Sprawdź okazje!
+          url: /t/ochrona-osobista
+          image: 'meganav/ochrona_osobista.jpg'
+    - title: COVID-19
+      subtitle: Covid-19
+      url: /t/covid-19
+      items:
+        - title: Dezynfekcja
+          url: /t/covid-19/dezynfekcja
+        - title: Odzież jednorazowa
+          url: /t/covid-19/odziez-jednorazowa
+        - title: Maski ochronne
+          url: /t/covid-19/maski-ochronne
+        - title: Przyłbice
+          url: /t/covid-19/przylbice
+      promo_banners:
+        - subtitle: Covid-19
+          title: Sprawdź okazje!
+          url: /t/dezynfekcja
+          image: 'meganav/covid_19.jpg'
