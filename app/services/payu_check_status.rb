@@ -21,7 +21,7 @@ class PayuCheckStatus
       if status == "COMPLETED"
         payment.complete! unless payment.completed?
       elsif status == "PENDING"
-        payment.update!(status: "processing") unless payment.processing?
+        payment.update!(state: "balance_due") unless payment.processing?
       elsif status == "CANCELLED"
         order.cancel
       end
