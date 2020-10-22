@@ -93,6 +93,9 @@
 
             <div class="row carousel-items-container">
               <% sliced_items.each do |item| %>
+              <% @product = item %>
+              <% @product_summary = Spree::ProductSummaryPresenter.new(item).call %>
+              
                 <div class="col-md-3">
                   <div class="single-car-item">
                     <%= render 'spree/shared/product', product: item, image_class: 'w-100' %>
@@ -100,7 +103,10 @@
                     <div class="input-group-append w-100 mt-2 d-flex justify-content-center">
                       <%= render 'spree/shared/quantity_select_sp', input_name: :quantity %>
                       <div class="input-group-append d-flex justify-content-center" style="background-color: transparent !important;">
-                        <button class="btn btn-rad sw-100 add-to-cart-button" onclick="addItemToCart(this)" id="add_item_cart" >
+                        <button class="btn btn-rad sw-100 add-to-cart-button" 
+                          data-product-summary="<%= @product_summary.to_json %>"
+                          onclick="addItemToCart(this)" id="add_item_cart" 
+                        >
                           <%= image_tag("custom/basket") %>
                         </button>
                       </div>
@@ -135,25 +141,30 @@
 
 <script>
   function addItemToCart(target) {
-    var variant_id = parseInt(target.parentElement.parentElement.parentElement.children["variant_id"].value);
+    var $cartForm = $(event.currentTarget);
+    
+    var variantId = parseInt(target.parentElement.parentElement.parentElement.children["variant_id"].value);
     var quantity = parseInt(target.parentElement.parentElement.children[0].children["quantity"].value);
-    console.log(variant_id, quantity);
-    fetch('/api/v2/storefront/cart/add_item', {
-      headers: SpreeAPI.prepareHeaders({ 'X-Spree-Order-Token': SpreeAPI.orderToken }),
-      method: 'POST',
-      body: JSON.stringify({
-        variant_id: variant_id,
-        quantity: quantity,
-        options: {},
-        cart: {
-          variant_id: variant_id,
-          quantity: quantity,
-          options: {}
-        }
-      })
-    }).then(response => response.json()).then(data => {
-      location.reload();
-      console.log(data);
-    });
+    var options = {}
+
+    SpreeAPI.Storefront.addToCart(
+      variantId,
+      quantity,
+      options, // options hash - you can pass additional parameters here, your backend
+      // needs to be aware of those, see API docs:
+      // https://github.com/spree/spree/blob/master/api/docs/v2/storefront/index.yaml#L42
+      function(response) {
+        Spree.fetchCart()
+        Spree.showProductAddedModal(JSON.parse(
+          $cartForm.attr('data-product-summary')
+        ), Spree.variantById($cartForm, variantId))
+        $cartForm.trigger({
+          type: 'product_add_to_cart',
+          variant: Spree.variantById($cartForm, variantId),
+          quantity_increment: quantity,
+          cart: response.attributes
+        })
+      }
+    )
   }
 </script>
