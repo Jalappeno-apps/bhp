@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/archetype2142/spree.git
-  revision: 89ada340f20a64dcb9a2728efe8cc2b7dcdd11d7
+  revision: 1c26563a1a913c672edb65117b1b8be60a334fc0
   branch: master
   specs:
     spree (4.2.0.rc1)
