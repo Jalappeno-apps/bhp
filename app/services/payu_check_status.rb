@@ -18,7 +18,7 @@ class PayuCheckStatus
       response_parsed = JSON.parse(response.body)
       status = response_parsed["orders"][0]["status"]
       payment = order.payments.last
-      puts response
+      puts response.body
       puts status
       if status == "COMPLETED"
         payment.complete! unless payment.completed?
