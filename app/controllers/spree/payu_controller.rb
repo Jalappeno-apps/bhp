@@ -29,7 +29,7 @@ module Spree
         PayuStatusWorker.perform_in(20.minutes, order.number)
 
       elsif order.payment_state == "paid"
-        redirect_to order_path(order), flash: { "Dziękujemy za zamówienie, prosimy o sprawdzenie skrzynki email" }
+        redirect_to order_path(order), flash: { success: "Dziękujemy za zamówienie, prosimy o sprawdzenie skrzynki email" }
       elsif order.payment_state == "void"
         redirect_to root_path, flash: { error: "Przykro nam, Twoje zamówienie się nie powiodło, prosimy o kontakt" }
       end
