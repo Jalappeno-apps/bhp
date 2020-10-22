@@ -25,6 +25,7 @@ module Spree
       if order.payment_state == "balance_due"
         redirect_to order_path(order), flash: { success: "Dziękujemy za zamówienie, czekam na potwierdzenie płatności. Proszę sprawdzić email" }
         PayuStatusWorker.perform_async(order.number)
+        PayuStatusWorker.perform_in(2.minutes, order.number)
         PayuStatusWorker.perform_in(10.minutes, order.number)
         PayuStatusWorker.perform_in(20.minutes, order.number)
 
