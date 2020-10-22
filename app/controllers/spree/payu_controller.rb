@@ -17,9 +17,9 @@ module Spree
     def store_return
       order = Order.find_by(number: params["order"])
 
-      PayuCheckStatus.execute!(
+      ::PayuCheckStatus.execute!(
         order.number,
-        PayuAccessToken.execute!
+        ::PayuAccessToken.execute!
       )
 
       if order.payment_state == "balance_due"
