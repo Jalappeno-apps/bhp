@@ -98,7 +98,7 @@
               
                 <div class="col-md-3">
                   <div class="single-car-item">
-                    <%= render 'spree/shared/product', product: item.master, image_class: 'w-100' %>
+                    <%= render 'spree/shared/product', product: item, image_class: 'w-100' %>
                     <input id="variant_id" type="hidden" value="<%= item.master.id %>"></input>
                     <div class="input-group-append w-100 mt-2 d-flex justify-content-center">
                       <%= render 'spree/shared/quantity_select_sp', input_name: :quantity %>
