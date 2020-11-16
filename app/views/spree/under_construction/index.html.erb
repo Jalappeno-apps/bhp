@@ -1,5 +1,10 @@
 <div class="container d-flex flex-column justify-content-center under-construction">
+<figure class="logo">
+<%= link_to root_path do %>
+ <%= image_tag("custom/logo.svg") %> 
+<% end %>
+</figure>
     <h1>Przepraszamy, <br/> strona jest w trakcie przebudowy.</h1>
-    <img 
+    <img class="under-construction__image"
         src="<%= asset_path('custom/under_construction.png') %>"
 </div>
