@@ -1,0 +1,18 @@
+.under-construction {
+    height: 90vh;
+    h1 {
+        color: $primary-color;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    figure {
+        position: absolute;
+        top: 50px;
+    }
+
+    &__image {
+        margin: 0 auto;
+        margin-top: 75px;
+    }
+}
