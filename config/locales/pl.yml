@@ -1,4 +1,8 @@
 pl:
+  activerecord:
+    attributes:
+      spree/product:
+        less_than+50+zł: less_than 50zl
   spree:
     order_mailer:
       subtotal: Wartość zamówionych produktów brutto
