@@ -9,6 +9,8 @@ Bundler.require(*Rails.groups)
 
 module Bhp
   class Application < Rails::Application
+    config.filter_parameters << :password
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
