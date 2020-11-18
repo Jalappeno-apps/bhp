@@ -13,7 +13,7 @@ class ImportCsvWorker
     CSV.parse(file, headers: true) do |row|
 
       next if Spree::Product.find_by(name: row[0])
-      
+
       product = Spree::Product.create!(
         shipping_category: Spree::ShippingCategory.first,
         tax_category: Spree::TaxCategory.first,
@@ -48,5 +48,3 @@ class ImportCsvWorker
     end
   end
 end
-
-/var/www/bhp/public/produkty.csv
