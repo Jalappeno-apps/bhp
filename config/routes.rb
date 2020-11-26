@@ -24,6 +24,7 @@ Rails.application.routes.draw do
 
     get "/terms-of-service", to: "tos#index", as: :tos
     get "/", to: "under_construction#index"
+    get "home", to: "home#index"
   end
 end
 
