@@ -98,6 +98,13 @@
     position: absolute;
     top: 15%;
 
+    .btn {
+      font-weight: 400;
+      background-color: transparent !important;
+      border-width: 3px;
+      border-radius: 5px;
+    }
+
     @include media-breakpoint-down(md) {
       margin-left: auto;
       margin-right: auto;
@@ -198,8 +205,10 @@
     .spree-btn {
       &.btn-primary {
         font-size: font-px-to-rem(12px);
-        font-weight: bold;
         text-transform: uppercase;
+        background-color: transparent;
+        border-width: 3px;
+        border-radius: 5px;
         @include media-breakpoint-up(md) {
           font-size: font-px-to-rem(24px);
         }
@@ -336,7 +345,6 @@
       &.btn-outline-primary {
         border: solid 2px theme-color('primary');
         font-size: font-px-to-rem(12px);
-        font-weight: bold;
         @include media-breakpoint-up(md) {
           font-size: font-px-to-rem(22px);
           width: 400px;
@@ -467,5 +475,17 @@
 .mob-hide {
   @include media-breakpoint-down(sm) {
     display: none;
+  }
+}
+.homepage-pills {
+  .nav-pills {
+    .nav-link {
+      background-color: $primary-background;
+      border-bottom: 3px solid #E6E6E8;
+      &.active {
+        color: $primary-color;
+        border-bottom: 3px solid $primary-color;
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@ pl:
       spree/product:
         less_than+50+zł: less_than 50zl
   spree:
+    search: Szukaj...
     order_mailer:
       subtotal: Wartość zamówionych produktów brutto
       total: Razem zapłacono
@@ -48,7 +49,7 @@ pl:
         p4: Brzmi zachęcająco? Zapraszamy serdecznie Państwa do zapoznania się z naszymi produktami!
       forlux_products:
         title: ŚRODKI CZYSTOŚCI FORLUX
-        button: WIECEJ
+        button: WIĘCEJ
       offer:
         title: Oferujemy rabat X % na pierwsze zakupy, <br/>za zapisanie się do Newslettera!
         button: ZAPISZ SIĘ
