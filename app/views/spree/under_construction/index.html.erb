@@ -1,10 +1,34 @@
 <div class="container d-flex flex-column justify-content-center under-construction">
-<figure class="logo">
-<%= link_to root_path do %>
- <%= image_tag("custom/logo.svg") %> 
-<% end %>
-</figure>
-    <h1>Przepraszamy, <br/> strona jest w trakcie przebudowy.</h1>
-    <img class="under-construction__image"
-        src="<%= asset_path('custom/under_construction.png') %>"
+  <figure class="logo">
+  <%= link_to root_path do %>
+   <%= image_tag("custom/logo.svg") %> 
+  <% end %>
+  </figure>
+
+      <%= image_tag 'custom/under_construction.png', class: "under-construction__image" %>
+
+      <h1 class="mt-5">Zmieniamy się dla Ciebie - Strona w przebudowie</h1>
+
+      <div class="text-center mt-5">
+        <p>Zapraszamy do kontaktu telefonicznego lub drogą e-mail lub zapraszamy do naszego biura:</p>
+
+        <p>Biuro Handlowe - Łowicz</p>
+        <p>
+          tel.kom. <a href="tel:+48506090911">506 090 911</a>
+          <br>
+          tel.kom. <a href="tel:+48796690240">796 690 240</a>
+        </p>
+        <b>
+          INTERPLUS Sp. z o.o.<br/>
+          Nadbzurzańska 1/3 <br/>
+          99-400 Łowicz<br/>
+        </b>
+        <br/>
+        <a href="mailto:lowicz@forlux.eu">lowicz@forlux.eu</a>
+
+        <p>
+          W celu zapoznania się z naszą ofertą środków czystości i dezynfekcji zapraszamy na naszą stronę
+        </p>
+        <a href="www.forlux.pl">forlux.pl</a>
+      </div>
 </div>
