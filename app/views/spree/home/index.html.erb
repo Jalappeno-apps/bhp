@@ -1,6 +1,6 @@
 <% @body_id = 'home' %>
 
-<div class="container">
+<div class="container header-spree-fluid">
   <div class="homepage-hero-image mb-3 position-relative">
     <img class="lazyload hero-image position-absolute"
       data-src="<%= asset_path('homepage/main_banner.jpg') %>"
@@ -9,7 +9,7 @@
 
     <div class="hero-content">
       <div class="head-text">
-        <h2 class="mob-small">Twój niezawodny partner biznesowy z artykułami BHP i środkami czystości.</h2>
+        <h2 class="mob-small text-left">Twój niezawodny partner biznesowy <br/> z artykułami BHP i środkami czystości.</h2>
 
         <%= image_tag 'custom/rzetelna_firma', class: "mob-hide" %>
       </div>
@@ -37,25 +37,25 @@
     </div>
   </div>
 
-  <div>
+  <div class="homepage-pills">
 
-    <ul class="nav nav-pills nav-fill" role="tablist" style="flex-wrap: initial;">
+    <ul class="nav nav-pills pills nav-fill" role="tablist" style="flex-wrap: initial;">
       <li class="nav-item" href="#menu0">
-        <a class="nav-link active" style="font-size: 0.6rem" data-toggle="tab" href="#menu0">DARMOWA WYSYŁKA</a>
+        <a class="nav-link bg-white" data-toggle="tab" href="#menu0">DARMOWA WYSYŁKA</a>
       </li>
       <li class="nav-item" href="#menu1">
-        <a class="nav-link" style="font-size: 0.6rem" data-toggle="tab" href="#menu1">NOWOŚCI</a>
+        <a class="nav-link bg-white active" data-toggle="tab" href="#menu1">NOWOŚCI</a>
       </li>
       <li class="nav-item" href="#menu2">
-        <a class="nav-link" style="font-size: 0.6rem" data-toggle="tab" href="#menu2">POPULARNE</a>
+        <a class="nav-link bg-white" data-toggle="tab" href="#menu2">POPULARNE</a>
       </li>
     </ul>
 
     <div class="tab-content">
-      <div id="menu0" class="tab-pane active"><br>
+      <div id="menu0" class="tab-pane"><br>
         <div data-product-carousel data-product-carousel-taxon-id='free_shipping' class="mb-3"></div>
       </div>
-      <div id="menu1" class="tab-pane"><br>
+      <div id="menu1" class="tab-pane active"><br>
         <div data-product-carousel data-product-carousel-taxon-id='new_products' class="mb-3"></div>
       </div>
       <div id="menu2" class="tab-pane"><br>
@@ -181,7 +181,7 @@
           </div>
           <div style="width: 100%" class="d-flex justify-content-center">
 
-            <%= link_to Spree.t('footer.button'), "tel:+48796690240", class: 'text-center mt-3 btn btn-outline-primary spree-btn px-5' %>
+            <%= link_to Spree.t('footer.button'), "tel:+48796690240", class: 'text-center mt-3 btn btn-outline-primary text-light spree-btn px-5' %>
           </div>
         </div>
       </div>
