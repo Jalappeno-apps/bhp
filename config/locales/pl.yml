@@ -54,8 +54,9 @@ pl:
         title: Oferujemy rabat X % na pierwsze zakupy, <br/>za zapisanie się do Newslettera!
         button: ZAPISZ SIĘ
     footer:
-      my_account: Moje Konto
-      tos: REGULAMIN
+      my_account: Moje konto
+      gdpr: RODO
+      tos: Regulamin
       button: ZADZWOŃ
       contact:
         email: Email
@@ -66,4 +67,18 @@ pl:
         message: Wiadomość
     spree_reviews:
       show_identifier: Pokaż identyfikator
-
+    returns:
+      title: "Odstąpienie od umowy"
+      subtitle: "Zasady odstąpienia od umowy"
+      phone_number: "Biuro: tel. "
+      first_step: "W ciągu 14 dni od otrzymania przesyłki skontaktuj się z nami 
+      <br> 
+      i poinformuj nas o chęci odstąpienia od umowy."
+      second_step: "Po rozmowie z nami, pobierz formularz, wydrukuj i wypełnij."
+      third_step: "Przed upływem 14 dni od momentu zgłoszenia nadaj
+      <br>
+      przesyłkę z wypełnionym formularzem na poniższy adres: "
+      with_a_note: "Z dopiskiem: &rdquo;ZWROT&rdquo;"
+      tos_details: "Szczegółowe informacje dotyczące odstąpienia od umowy<br>
+znajdziesz w naszym Regulaminie."
+      tos: Regulamin

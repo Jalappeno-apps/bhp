@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     get 'store_return', to: "payu#store_return"
 
     get "/terms-of-service", to: "tos#index", as: :tos
+    get "/returns", to: "returns#index", as: :returns
     get "/", to: "under_construction#index"
     get "home", to: "home#index"
   end
