@@ -5,6 +5,10 @@ pl:
         less_than+50+zł: less_than 50zl
   spree:
     search: Szukaj...
+    total: Suma
+    cart_page:
+      header: KOSZYK
+      empty_info: Twój koszyk jest pusty.
     order_mailer:
       subtotal: Wartość zamówionych produktów brutto
       total: Razem zapłacono

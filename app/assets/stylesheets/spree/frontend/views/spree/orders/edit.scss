@@ -73,7 +73,7 @@
       color: theme-color("secondary");
       .d-table-cell {
         border-top: none;
-        border-bottom: 1px solid $global-border-style;
+        border-bottom: 3px solid $primary-color;
         padding: 7px 0;
       }
     }
@@ -97,7 +97,7 @@
           }
         }
         border-top: none;
-        border-bottom: 1px solid $global-border-style;
+        border-bottom: 3px solid $primary-color;
         padding: 22px 0;
         vertical-align: top;
         @include media-breakpoint-up(lg) {
@@ -173,6 +173,7 @@
       font-weight: 600;
       line-height: 1;
       margin-bottom: 28px;
+      color: $primary-color;
       @include media-breakpoint-up(sm) {
         font-size: font-px-to-rem(24px);
         letter-spacing: 0.6px;
@@ -242,6 +243,7 @@
       }
     }
     &-total {
+      color: $primary-color;
       @include media-breakpoint-up(lg) {
         font-size: font-px-to-rem(26px);
         font-weight: 500;
@@ -270,6 +272,10 @@
         }
       }
     }
+  }
+  &-buttons-continue {
+    text-decoration: none !important;
+    border-bottom: 3px solid $primary-color;
   }
   &-coupon-code {
     margin-bottom: 30px;
@@ -399,6 +405,15 @@
       }
       @include media-breakpoint-up(lg) {
         font-size: font-px-to-rem(32px);
+      }
+    }
+  }
+  .shopping-cart-coupon-code {
+    .input-group {
+      border: 3px solid $primary-color;
+      border-radius: 5px;
+      input {
+        border: 0;
       }
     }
   }
