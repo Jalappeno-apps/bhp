@@ -104,4 +104,20 @@
   display: inline-block;
   position: fixed;
   bottom: 0;
+  
+  img {
+    width: 75px;
+  }
+
+  &__find-out-more {
+    a {
+      color: black;
+      border-bottom: 3px solid $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+#cookie_bar_button {
+  border-radius: 5px;
 }

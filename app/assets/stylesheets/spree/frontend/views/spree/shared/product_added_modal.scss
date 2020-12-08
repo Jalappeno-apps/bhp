@@ -37,8 +37,8 @@
         }
       }
       &-price {
+        color: $primary-color;
         font-size: font-px-to-rem(14px);
-        font-weight: 600;
         @include media-breakpoint-up(lg) {
           font-size: font-px-to-rem(24px);
         }
@@ -46,6 +46,8 @@
     }
   }
   &-button {
+    border-radius: 5px;
+    border-width: 4px;
     font-size: font-px-to-rem(12px);
     @include media-breakpoint-up(lg) {
       font-size: font-px-to-rem(20px);

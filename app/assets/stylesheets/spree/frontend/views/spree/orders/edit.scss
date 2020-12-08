@@ -42,6 +42,7 @@
       }
     }
     &-continue-link {
+      border-radius: 5px;
       margin-top: 100px;
       margin-bottom: 30px;
       @include media-breakpoint-up(sm) {
