@@ -75,6 +75,11 @@ pl:
         message: Wiadomość
     spree_reviews:
       show_identifier: Pokaż identyfikator
+    progressbar:
+      log_in: Zaloguj się
+      fill_details: Twoje dane
+      shipment: Dostawa
+      order_review: Podsumowanie
     returns:
       title: "Odstąpienie od umowy"
       subtitle: "Zasady odstąpienia od umowy"
