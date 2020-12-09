@@ -66,10 +66,10 @@
 </div>
 
 <div class="container">
-  <div class="big-blue-box p-md-5">
+  <div class="big-blue-box p-5">
     <p><%= Spree.t('homepage.interplus.p1').html_safe %></p>
     <p><%= Spree.t('homepage.interplus.p2') %></p>
-    <h3 class="text-center"> <%= Spree.t('homepage.interplus.title') %></h3>
+    <h3 class="text-center mt-5"> <%= Spree.t('homepage.interplus.title') %></h3>
   </div>
 </div>
 
@@ -77,7 +77,7 @@
   <div class="big-red-box p-5">
     <div class="red-banner-text-align">
       <h3 class="red-banner-text"><%= Spree.t('homepage.red_box.title') %></h3>
-      <%= link_to Spree.t('homepage.red_box.button'), spree.products_path, class: 'btn btn-primary spree-btn px-5 mt-2', style: "font-size: 2rem;"%>
+      <%= link_to Spree.t('homepage.red_box.button'), spree.products_path, class: 'btn btn-primary spree-btn mt-4 px-5 mt-2', style: "font-size: 2rem;"%>
     </div>
   </div>
 </div>
@@ -132,11 +132,9 @@
 <div class="container mt-5">
   <div class="forlux-red-box p-5">
     <div class="red-banner-text-align">
-      <h1 class="mob-none red-banner-text text-center"><%= Spree.t('homepage.forlux_section.title') %></h1>
-      <%= image_tag 'custom/forlux.svg', class: "desk-none mb-4 mt-4" %>
+      <h1 class="font-weight-bold red-banner-text text-center"><%= Spree.t('homepage.forlux_section.title') %></h1>
       <h5 class="red-banner-text"><%= Spree.t('homepage.forlux_section.p1') %></h5>
-      <p><%= Spree.t('homepage.forlux_section.p2') %></p>
-      <p><%= Spree.t('homepage.forlux_section.p3') %></p>
+      <p><%= Spree.t('homepage.forlux_section.p2') %> <%= Spree.t('homepage.forlux_section.p3') %></p>
       <p><%= Spree.t('homepage.forlux_section.p4') %></p>
     </div>
   </div>
@@ -170,7 +168,7 @@
     <div class="col-md-6">
       <div class="footer-contact-image">
         <div class="footer-contact-text">
-          <h2 class="mb-5 mob-small-title"> Masz jakieś pytania? <br/>Zapytaj naszego doradcę </h2>
+          <h2 class="mb-5 mob-small-title font-weight-light"> Masz jakieś pytania? <br/>Zapytaj naszego doradcę </h2>
           <div class="mb-2 d-flex" style="justify-content: space-evenly">
             <%= image_tag('custom/contact_icon', class: "") %>
             <div class="mobile-font-06">
