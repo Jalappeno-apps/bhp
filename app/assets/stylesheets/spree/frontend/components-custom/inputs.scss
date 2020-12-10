@@ -98,7 +98,7 @@
     height: 22px;
     font-size: 0;
     border-radius: 0;
-    border: 3px solid theme-color("secondary");
+    border: 3px solid $primary-color;
     background-color: $input-background;
     cursor: pointer;
     border-radius: 10px;
@@ -149,7 +149,7 @@
   }
 
   input[type="checkbox"]:checked + label {
-    background-color: theme-color("secondary");
+    background-color: $primary-color;
 
     &:after {
       opacity: 1;

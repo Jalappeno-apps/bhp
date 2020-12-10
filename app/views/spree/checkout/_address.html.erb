@@ -18,8 +18,9 @@
     address_name = "#{address_type[0...4]}_address" %>
     <div class="col-12 mb-4" data-hook="<%= address_type %>_fieldset_wrapper">
       <div id="<%= address_type %>" data-hook>
-        <h5 class="text-uppercase checkout-content-header">
+        <h5 class="checkout-content-header text-primary">
           <%= Spree.t(address_type + '_address') %>
+          <hr style="background-color: #EC003B;">
         </h5>
         <% if address_type == 'shipping' %>
           <div class="spree-checkbox-container checkout-content-billing-checkbox" data-hook="use_billing">
