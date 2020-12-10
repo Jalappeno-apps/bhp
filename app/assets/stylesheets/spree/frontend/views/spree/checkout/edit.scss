@@ -13,6 +13,15 @@
   &-progress-steps {
     a {
       text-transform: none;
+      color: #333333 !important;
+    }
+  }
+  .checkout-progress-steps-image--full {
+    @include colored-full-circle($primary-background, $primary-color);
+  }
+  &-progress-steps-line {
+    hr {
+      border-color: $primary-color !important;
     }
   }
   &-header {
@@ -521,5 +530,15 @@
     #checkout_form_confirm {
       justify-content: flex-end;
     }
+  }
+}
+
+.checkout-content-inner-field {
+  input::placeholder {
+    color: #676464;
+    opacity: 1 !important;
+  }
+  input:focus::placeholder{
+    opacity: 0 !important;
   }
 }

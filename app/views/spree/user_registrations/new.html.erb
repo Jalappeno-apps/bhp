@@ -1,7 +1,7 @@
 
 <% @body_id = 'signup' %>
 <%= render partial: 'spree/shared/error_messages', locals: { target: @user } %>
-<div>
+<div class="pt-5">
     <ul class="progressbar">
         <li class="active"><%= Spree.t('progressbar.log_in') %></li>
         <li><%= Spree.t('progressbar.fill_details') %></li>
@@ -9,7 +9,7 @@
         <li><%= Spree.t('progressbar.order_review') %></li>
     </ul>
 </div>
-<div class="col-lg-6 offset-lg-3">
+<div class="col-lg-6 pt-3 offset-lg-3">
   <h3 class="spree-header spree-mb-large spree-mt-large text-primary"><%= Spree.t(:new_customer) %></h3>
   <div id="new-customer" data-hook="login">
     <%= form_for resource, as: :spree_user, url: spree.registration_path do |f| %>

@@ -175,7 +175,7 @@
 }
 
 .spree-checkbox-label {
-  color: theme-color("info");
+  color: theme-color("dark-text");
   font-size: font-px-to-rem(12px);
   margin: 0;
   // Autoprefixer don't seem to catch this
