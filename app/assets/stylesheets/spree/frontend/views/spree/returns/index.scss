@@ -34,7 +34,9 @@
         &__content {
             flex-basis: 80%;
             font-size: 15px;
+            padding-left: 1rem;
             @include media-breakpoint-up(md) {
+                padding-left: 0;
                 font-size: 20px;
             }
             &--offset {

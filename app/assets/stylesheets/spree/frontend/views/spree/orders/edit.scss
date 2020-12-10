@@ -54,7 +54,7 @@
         align-self: center;
       }
       @include media-breakpoint-up(lg) {
-        padding: 6px 12px;
+        padding: 3px 6px;
         margin-top: 60px;
         margin-bottom: 90px;
         width: 517px;
@@ -199,6 +199,7 @@
         font-size: font-px-to-rem(14px);
         border-color: theme-color("borders");
         z-index: 1;
+        border-width: 3px;
         @include media-breakpoint-up(sm) {
           width: 60px;
           height: 51.4px;
@@ -241,6 +242,16 @@
           font-size: font-px-to-rem(20px);
           padding: 1px 15px 2px;
         }
+      }
+      button.shopping-cart-item-quantity-decrease-btn {
+        border-width: 3px !important;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      button.shopping-cart-item-quantity-increase-btn {
+        border-width: 3px !important;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
       }
     }
     &-total {
@@ -412,9 +423,10 @@
   .shopping-cart-coupon-code {
     .input-group {
       border: 3px solid $primary-color;
-      border-radius: 5px;
+      border-radius: 10px;
       input {
         border: 0;
+        height: 35px;
       }
     }
   }
@@ -425,14 +437,17 @@
       margin-bottom: 100px;
     }
     &-checkout {
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
       font-size: font-px-to-rem(17px);
       @include media-breakpoint-up(sm) {
         font-size: font-px-to-rem(28px);
-        height: 74.4px;
       }
       @include media-breakpoint-up(lg) {
         font-size: font-px-to-rem(22px);
-        height: 65px;
       }
     }
     &-continue {

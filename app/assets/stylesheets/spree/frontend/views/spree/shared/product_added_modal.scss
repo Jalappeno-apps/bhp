@@ -12,6 +12,11 @@
       font-size: font-px-to-rem(30px);
     }
   }
+  &__cart-icon {
+    color: $primary-color;
+    width: 100px;
+    height: 100px;
+  }
   &-product {
     &-image-container {
       position: relative;
@@ -60,4 +65,9 @@
       }
     }
   }
+}
+
+.modal-header .close {
+  color: $primary-color;
+  opacity: 1;
 }

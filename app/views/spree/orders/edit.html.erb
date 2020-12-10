@@ -16,7 +16,7 @@
 
           <p class="text-center shopping-cart-empty-info"><%= Spree.t('cart_page.empty_info').html_safe %></p>
         </div>
-        <%= link_to Spree.t(:continue_shopping), spree.products_path, class: 'btn btn-primary text-uppercase shopping-cart-empty-continue-link' %>
+        <%= link_to Spree.t(:continue_shopping), spree.products_path, class: 'btn btn-primary text-uppercase font-weight-light shopping-cart-empty-continue-link' %>
       </div>
     </div>
   <% else %>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="d-flex flex-column text-center shopping-cart-buttons" data-hook="cart_buttons">
-              <%= link_to Spree.t('cart_page.checkout'), spree.checkout_path, class: 'btn btn-primary text-uppercase cart-checkout-btn shopping-cart-buttons-checkout', id: 'checkout-link', method: :get %>
+              <%= link_to Spree.t('cart_page.checkout'), spree.checkout_path, class: 'btn btn-primary text-uppercase cart-checkout-btn shopping-cart-buttons-checkout font-weight-light', id: 'checkout-link', method: :get %>
               <span class="text-uppercase shopping-cart-buttons-or d-lg-none"><%= Spree.t(:or) %></span>
               <%= link_to Spree.t(:continue_shopping), spree.products_path, class: 'btn btn-outline-primary text-uppercase d-lg-none shopping-cart-buttons-continue' %>
             </div>

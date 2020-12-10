@@ -20,9 +20,9 @@
           <div class="row justify-content-center align-items-center">
             <div class="col text-center">
               <%= icon(name: 'cart',
-              classes: 'shopping-cart-empty-image mt-0',
-              width: 36,
-              height: 36)  %>            
+              classes: 'product-added-modal__cart-icon mb-3',
+              width: 18,
+              height: 18)  %>            
             </div>
           </div>
           <div class="row justify-content-center align-items-center">
@@ -43,15 +43,15 @@
       </div>
       <div class="modal-footer p-4 pb-5 border-0">
         <div class="container-fluid">
-          <div class="row pb-4 justify-content-center">
-            <div class="col-12 col-lg-8">
-              <%= link_to spree.checkout_path, class: 'btn btn-primary w-100 text-uppercase product-added-modal-button', method: :get do %>
+          <div class="row pb-3 justify-content-center">
+            <div class="col-12 col-lg-5">
+              <%= link_to spree.checkout_path, class: 'btn btn-primary w-100 text-uppercase font-weight-light product-added-modal-button', method: :get do %>
                 <%= Spree.t('pdp.checkout') %>
               <% end %>
             </div>
           </div>
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-5">
               <%= link_to spree.cart_path, class: 'btn btn-outline-primary w-100 text-uppercase product-added-modal-button' do %>
                 <%= Spree.t('pdp.view_cart') %>
               <% end %>
