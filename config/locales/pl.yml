@@ -82,7 +82,7 @@ pl:
       fill_details: Twoje dane
       shipment: Dostawa
       order_review: Podsumowanie
-    returns:
+    returns_page:
       title: "Odstąpienie od umowy"
       subtitle: "Zasady odstąpienia od umowy"
       phone_number: "Biuro: tel. "
