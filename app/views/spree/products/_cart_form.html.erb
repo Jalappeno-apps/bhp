@@ -27,7 +27,7 @@
   <div id="inside-product-cart-form" data-hook="inside_product_cart_form">
     <% if is_product_available_in_currency %>
       <div id="product-price" class="mb-2 text-center text-md-left add-to-cart-form-price" data-hook="product_price">
-        <span class="price selling" content="<%= @product_price.to_d %>">
+        <span class="price selling text-primary" content="<%= @product_price.to_d %>">
           <% if default_variant.sale_price %>
           <p class="discount"> - <%= sale_percent default_variant.original_price_in(current_currency), default_variant.price_in(current_currency) %> % </p>
           <span style="font-size: 15px; text-decoration: line-through;"> <%= display_original_price(default_variant) %> </span>
@@ -40,7 +40,7 @@
       </div>
     <% end %>
 
-    <div class="text-center text-md-left add-to-cart-form-general-availability text-uppercase">
+    <div class="text-center text-md-left add-to-cart-form-general-availability text-primary text-uppercase">
       <%= Spree.t(:availability) %>:
       <% if !is_product_available_in_currency %>
         <%= render 'cart_form_availability_templates', type: 'not-available-in-currency' %>
@@ -77,7 +77,11 @@
           <%= render 'spree/shared/quantity_select', input_name: :quantity %>
         </div>
 
-        <%= button_tag class: 'btn btn-primary w-100 text-uppercase font-weight-bold add-to-cart-button', id: 'add-to-cart-button', type: :submit, disabled: true do %>
+        <%= button_tag class: 'btn btn-primary w-100 text-uppercase add-to-cart-button font-weight-light', id: 'add-to-cart-button', type: :submit, disabled: true do %>
+          <%= icon(name: 'cart',
+          classes: 'pb-2 mr-1',
+          width: 30,
+          height: 30)  %>
           <%= Spree.t(:add_to_cart) %>
         <% end %>
       </div>
