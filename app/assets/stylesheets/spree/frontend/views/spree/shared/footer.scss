@@ -1,5 +1,6 @@
 .sub-footer {
   padding: 2rem;
+  font-weight: 300 !important;
 }
 .footer-address {
   color: white;
@@ -24,8 +25,8 @@
 
   .footer-contact-text {
     position: absolute;
-    top: 10%;
-    left: 3%;
+    top: 15%;
+    left: 5%;
     color: white;
   }
 
@@ -104,4 +105,25 @@
   display: inline-block;
   position: fixed;
   bottom: 0;
+
+  p {
+    color: #333333;
+    line-height: 30px;
+  }
+  
+  img {
+    width: 75px;
+  }
+
+  &__find-out-more {
+    a {
+      color: black;
+      border-bottom: 3px solid $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+#cookie_bar_button {
+  border-radius: 5px;
 }

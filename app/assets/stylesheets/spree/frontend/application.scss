@@ -37,6 +37,7 @@
 @import "spree/frontend/views/spree/user_passwords/user_passwords";
 @import "spree/frontend/views/spree/under_construction/under_construction";
 @import "spree/frontend/views/spree/user_sessions/new";
+@import "spree/frontend/views/spree/user_registrations/new";
 @import "spree/frontend/views/spree/products/index";
 @import "spree/frontend/components-custom/headers";
 @import "spree/frontend/components-custom/inputs";
@@ -53,6 +54,7 @@
 @import "spree/frontend/views/spree/products/show";
 @import "spree/frontend/views/spree/products/cart_form";
 @import "spree/frontend/views/spree/products/gallery_modal";
+@import "spree/frontend/views/spree/returns/index";
 @import "spree/frontend/views/spree/shared/product_added_modal";
 @import "spree/frontend/views/spree/shared/mobile_navigation";
 @import "spree/frontend/views/spree/shared/no_product_available";

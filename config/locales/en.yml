@@ -7,3 +7,8 @@ en:
       reliable_delivery: Fast delivieries
       returns: Quick returns
       main_banner: Main banner
+    progressbar:
+      log_in: Log in
+      fill_details: Fill details
+      shipment: Shipment
+      order_review: Order review

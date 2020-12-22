@@ -17,7 +17,8 @@
       overflow: hidden;
 
       img {
-        border: 2px solid transparent;
+        border: 3px solid transparent;
+        border-radius: 5px;
         &.selected {
           border-color: $primary-color;
         }

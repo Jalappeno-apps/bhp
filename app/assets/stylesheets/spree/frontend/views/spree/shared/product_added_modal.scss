@@ -12,6 +12,11 @@
       font-size: font-px-to-rem(30px);
     }
   }
+  &__cart-icon {
+    color: $primary-color;
+    width: 100px;
+    height: 100px;
+  }
   &-product {
     &-image-container {
       position: relative;
@@ -37,8 +42,8 @@
         }
       }
       &-price {
+        color: $primary-color;
         font-size: font-px-to-rem(14px);
-        font-weight: 600;
         @include media-breakpoint-up(lg) {
           font-size: font-px-to-rem(24px);
         }
@@ -46,6 +51,8 @@
     }
   }
   &-button {
+    border-radius: 5px;
+    border-width: 4px;
     font-size: font-px-to-rem(12px);
     @include media-breakpoint-up(lg) {
       font-size: font-px-to-rem(20px);
@@ -58,4 +65,9 @@
       }
     }
   }
+}
+
+.modal-header .close {
+  color: $primary-color;
+  opacity: 1;
 }

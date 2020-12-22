@@ -5,7 +5,7 @@
     transition: basic-transition(color);
     text-transform: uppercase;
     text-decoration: underline;
-    color: theme-color('info');
+    color: theme-color('dark-text');
     font-size: font-px-to-rem(12px);
 
     &:hover,

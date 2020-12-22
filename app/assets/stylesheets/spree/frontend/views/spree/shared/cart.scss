@@ -58,3 +58,9 @@
   height: 65px;
   padding: 16px 28px;
 }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: $primary-color;
+  font-weight: bold;
+  content: ">"
+}
