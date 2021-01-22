@@ -5,9 +5,7 @@
     padding: 10px;
   }
   .btn-rad {
-    border: 3px solid red;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border: 1px solid red;
   }
 </style>
 
@@ -95,20 +93,28 @@
               <% sliced_items.each do |item| %>
               <% @product = item %>
               <% @product_summary = Spree::ProductSummaryPresenter.new(item).call %>
-              
+              <% is_product_available_in_currency = product_available_in_currency? %>
+
+
                 <div class="col-md-3">
                   <div class="single-car-item">
                     <%= render 'spree/shared/product', product: item, image_class: 'w-100' %>
                     <input id="variant_id" type="hidden" value="<%= item.master.id %>"></input>
-                    <div class="input-group-append w-100 mt-2 d-flex justify-content-center">
-                      <%= render 'spree/shared/quantity_select_sp', input_name: :quantity %>
-                      <div class="input-group-append d-flex justify-content-center" style="background-color: transparent !important;">
-                        <button class="btn btn-rad sw-100 add-to-cart-button" 
-                          data-product-summary="<%= @product_summary.to_json %>"
-                          onclick="addItemToCart(this)" id="add_item_cart" 
-                        >
-                          <%= image_tag("custom/basket") %>
-                        </button>
+                    <div class="input-group-append w-100 mt-2 d-flex justify-content-center" >
+                      <div class="row">
+                        <div class="col-md-8">
+                          <%= render 'spree/shared/quantity_select_sp', input_name: :quantity %>
+                        </div>
+                        <div class="col-md-4">
+                          <input id="variant_id" type="hidden" value="<%= item.master.id %>"></input>
+                          <button class="btn btn-rad sw-100 add-to-cart-button" 
+                            data-variants= "<%= product_variants_matrix(is_product_available_in_currency) %>"
+                            data-product-summary="<%= @product_summary.to_json %>"
+                            onclick="addItemToCart(this)" id="add_item_cart" 
+                          >
+                            <%= image_tag("custom/basket") %>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -142,9 +148,10 @@
 <script>
   function addItemToCart(target) {
     var $cartForm = $(event.currentTarget);
-    
-    var variantId = parseInt(target.parentElement.parentElement.parentElement.children["variant_id"].value).toString(10);
-    var quantity = parseInt(target.parentElement.parentElement.children[0].children["quantity"].value);
+    console.log($cartForm);
+
+    var variantId = parseInt(target.parentElement.children[0].value).toString(10);
+    var quantity = parseInt(target.parentElement.parentElement.children[0].children[0].children[1].value);
     var options = {}
 
     Spree.ensureCart(function() {

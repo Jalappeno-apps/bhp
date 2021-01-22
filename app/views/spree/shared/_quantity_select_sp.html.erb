@@ -1,16 +1,22 @@
 <%# TODO: Use in cart %>
-<div class="d-flex border-rad quantity-select mx-md-0">
-  <%= button_tag '-', type: 'button', class: "border-rad flex-grow-0 flex-shrink-0 py-0 quantity-select-decrease" %>
+<div class="d-flex border-rad quantity-select mx-md-0" >
+  <%= button_tag '-', type: 'button', class: "border-rad-left flex-grow-0 flex-shrink-0 py-0 quantity-select-decrease" %>
   <%= number_field_tag input_name, 1, min: 1, max: 100000, class: "p-0 flex-shrink-1 text-center form-control quantity-select-value", 'aria-label': Spree.t('pdp.quantity') %>
-  <%= button_tag '+', type: 'button', class: "flex-grow-0 flex-shrink-0 py-0 quantity-select-increase" %>
+  <%= button_tag '+', type: 'button', class: "flex-grow-0 border-rad-right flex-shrink-0 py-0 quantity-select-increase" %>
 </div>
 
 <style>
-  .border-rad {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+  .border-rad-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
+
+  .border-rad-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
   .quantity-select {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
 </style>
