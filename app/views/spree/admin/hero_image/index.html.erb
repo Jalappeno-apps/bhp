@@ -25,7 +25,7 @@
         <div class="w-20">
           <%= image_tag main_app.url_for(f.image), class: 'hero-image' %>
         </div>
-        <span class="truncate-80"><%= f.image.filename %></span>
+        <span class="truncate-70"><%= f.image.filename %></span>
       </div>
 
       <div class="col-md-2">
@@ -70,7 +70,7 @@
     height: 16px;
   }
 
-  .truncate-30px, .truncate-100px {
+  .truncate-30px, .truncate-70 {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
@@ -86,7 +86,7 @@
     width: 20%;
   }
 
-  .truncate-80 {
-    width: 80%;
+  .truncate-70 {
+    width: 70%;
   }
 </style>
