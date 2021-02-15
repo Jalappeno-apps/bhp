@@ -1,5 +1,5 @@
 <div class="row align-items-center  border-bottom">
-  <%= link_to admin_hero_images_path do %>
+  <%= link_to hero_images_path do %>
     <%= image_tag 'icons/left_arrow.svg', width: '24px', class: 'mr-2 icon-hover'%>
   <% end %>
 
@@ -8,7 +8,7 @@
   </h1>
 </div>
 
-<%= form_for(@hero_image, url: admin_hero_images_path) do |f| %>
+<%= form_for(@hero_image, url: hero_images_path) do |f| %>
   <% if @hero_image.image.attached? %>
     <%= image_tag main_app.url_for(@hero_image.image), class: 'image-90 m-2' %>
   <% end %>
