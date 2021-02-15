@@ -1,0 +1,92 @@
+<div class="row align-items-center  border-bottom">
+    <h1 class="contextual-title px-0 mb-0 col">
+        New Image
+    </h1>
+
+    <div class="page-actions pl-0 pr-0" data-hook="toolbar">
+      <%= link_to admin_new_hero_image_path, class: 'btn btn-success' do %>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 512 512" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" class="icon-add icon icon-add.svg">
+          <g transform="matrix(-8.69966,-8.69966,-8.69966,8.69966,481.449,256.527)">
+              <path d="M14.061,12.927L24.78,23.646C25.073,23.939 25.073,24.414 24.78,24.707C24.487,25 24.013,25 23.72,24.707L13,13.987L2.28,24.707C1.987,25 1.513,25 1.22,24.707C0.927,24.414 0.927,23.939 1.22,23.646L11.939,12.927L1.22,2.207C0.927,1.914 0.927,1.439 1.22,1.146C1.366,1 1.558,0.927 1.75,0.927C1.942,0.927 2.134,1 2.28,1.146L13,11.866L23.72,1.146C23.866,1 24.058,0.927 24.25,0.927C24.442,0.927 24.634,1 24.78,1.146C25.073,1.439 25.073,1.914 24.78,2.207L14.061,12.927Z" style="fill-rule:nonzero;stroke:currentColor;stroke-width:2.76px;"></path>
+          </g>
+        </svg>
+        <%= I18n.t("new_image", scope: ['spree', 'admin']) %>
+      <% end %>
+    </div>
+</div>
+
+<% @hero_images.each_with_index do |f, i| %>
+  <div class="row pt-2">
+      <div class="col-md-1" >
+        <span class="truncate-30px"><%= sprintf "%02d", i + 1 %>.</span>
+      </div>
+
+      <div class="col-md-9">
+        <div class="w-20">
+          <%= image_tag main_app.url_for(f.image), class: 'hero-image' %>
+        </div>
+        <span class="truncate-80"><%= f.image.filename %></span>
+      </div>
+
+      <div class="col-md-2">
+          <%= link_to admin_view_hero_image_path(f), class: "btn-icon" do %>
+            <%= image_tag 'icons/eye.svg', class: "icon-16px" %>
+          <% end %>
+
+            <%= link_to admin_delete_hero_image_path(f), method: :delete, class: "btn-icon" do %>
+              <%= image_tag 'icons/remove.svg', class: "icon-16px" %>
+            <% end %>
+          </a>
+      </div>
+    </div>
+<% end %>
+
+<style>
+  .hero-image {
+  	width: 50px;
+  	height: 50px;
+    display: inline-block;
+  }
+
+  .btn-icon {
+    margin-right: 4px;
+    border-radius: 4px;
+    opacity: 0.75;
+    transition: all 0.125s ease;
+    text-decoration: none;
+  }
+
+  .btn-icon:last-child {
+    margin-right: 0;
+  }
+
+  .btn-icon:hover {
+    text-decoration: none;
+    filter: drop-shadow(3px 3px 2px #0006);
+  }
+
+  .icon-16px {
+    width: 16px;
+    height: 16px;
+  }
+
+  .truncate-30px, .truncate-100px {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .truncate-30px {
+      width: 30px;
+  }
+
+  .w-20 {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .truncate-80 {
+    width: 80%;
+  }
+</style>

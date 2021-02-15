@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_10_133650) do
+ActiveRecord::Schema.define(version: 2021_02_11_132312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -237,6 +237,10 @@ ActiveRecord::Schema.define(version: 2021_02_10_133650) do
     t.text "preferences"
     t.index ["active"], name: "index_spree_gateways_on_active"
     t.index ["test_mode"], name: "index_spree_gateways_on_test_mode"
+  end
+
+  create_table "spree_hero_images", force: :cascade do |t|
+    t.string "image"
   end
 
   create_table "spree_inventory_units", id: :serial, force: :cascade do |t|

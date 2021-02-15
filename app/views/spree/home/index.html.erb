@@ -2,10 +2,23 @@
 
 <div class="container header-spree-fluid">
   <div class="homepage-hero-image mb-3 position-relative">
-    <img class="lazyload hero-image position-absolute"
-      data-src="<%= asset_path('homepage/main_banner.jpg') %>"
-      data-srcset="<%= image_source_set('homepage/main_banner') %>"
-      alt="<%= Spree.t('homepage.main_banner')%>" />
+
+  <%# Remove the first(1) to iterate over all images %>
+    <% if @hero_images.empty? %>
+        <img class="lazyload hero-image position-absolute"
+          data-src="<%= asset_path('homepage/main_banner.jpg') %>"
+          data-srcset="<%= image_source_set('homepage/main_banner') %>"
+          alt="<%= Spree.t('homepage.main_banner')%>" />
+    <% else %>
+      <%= @hero_images.first(1).each do |image| %>
+        <%= image_tag image,
+          class: 'lazyload hero-image position-absolute',
+          'data-src': image,
+          'data-srcset': image,
+          alt: Spree.t('homepage.main_banner')
+        %>
+      <% end %>
+    <% end %>
 
     <div class="hero-content">
       <div class="head-text">
@@ -105,7 +118,7 @@
         <h5 class="font-weight-light"> <%= Spree.t("homepage.category.c2").html_safe %> </h5>
       </a>
     </div>
-    
+
     <div class="col-md-4 category-card">
       <a href="/t/tasmy-ostrzegawcze">
         <%= image_tag "custom/categories/c4", class: "main" %>
@@ -185,7 +198,7 @@
     </div>
   </div>
 </div>
- 
+
  <div class="container">
   <div class="row d-xl-flex justify-content-xl-around pb-xl-5">
     <div class="col-md-6">
