@@ -26,7 +26,12 @@ module Spree
 
 		def destroy
 			@hero_image.destroy
-			redirect_to hero_images_path
+
+			respond_to do |f|
+				f.html {
+					redirect_to  hero_images_path, notice: "Image was successfully removed"
+				}
+			end
 		end
 
 		private
