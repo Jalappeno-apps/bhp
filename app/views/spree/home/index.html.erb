@@ -2,15 +2,14 @@
 
 <div class="container header-spree-fluid">
   <div class="homepage-hero-image mb-3 position-relative">
-
-  <%# Remove the first(1) to iterate over all images %>
     <% if @hero_images.empty? %>
         <img class="lazyload hero-image position-absolute"
           data-src="<%= asset_path('homepage/main_banner.jpg') %>"
           data-srcset="<%= image_source_set('homepage/main_banner') %>"
           alt="<%= Spree.t('homepage.main_banner')%>" />
     <% else %>
-      <%= @hero_images.first(1).each do |image| %>
+      <%# Remove the first(1) to iterate over all images %>
+      <% @hero_images.first(1).each do |image| %>
         <%= image_tag image,
           class: 'lazyload hero-image position-absolute',
           'data-src': image,
