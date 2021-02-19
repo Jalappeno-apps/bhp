@@ -4,6 +4,7 @@ pl:
       spree/product:
         less_than+50+zł: less_than 50zl
   spree:
+    hero_image: ~
     save_and_continue: Kontynuuj
     added_to_cart: PRODUKT DODANO DO KOSZYKA!
     search: Szukaj...
@@ -43,7 +44,7 @@ pl:
       red_box:
         title: Ochrona przed COVID-19.
         button: SPRAWDŹ
-      category: 
+      category:
         title: Kategorie
         c1: Ubrania i obuwie <br/> robocze
         c2: Rękawice <br/> ochronne
@@ -55,7 +56,7 @@ pl:
         title: Forlux
         p1: Numer 1 wśród Polskich producentów środków czystości!
         p2: Oferowane przez nas środki czystości są silnie skoncentrowane, dzięki czemu wystarczają na dłużej,
-        p3: co mocno obniża koszty sprzątania. Czytelne oznaczenia pojemności i dozowania ułatwiają rozcieńczanie i ich stosowanie. Nasze produkty stale są dostępne w ofercie kilkudziesięciu dystrybutorów w całej Polsce, a finalnymi klientami są firmy, restauracje, szkoły, instytucje, warsztaty samochodowe i wiele innych podmiotów. 
+        p3: co mocno obniża koszty sprzątania. Czytelne oznaczenia pojemności i dozowania ułatwiają rozcieńczanie i ich stosowanie. Nasze produkty stale są dostępne w ofercie kilkudziesięciu dystrybutorów w całej Polsce, a finalnymi klientami są firmy, restauracje, szkoły, instytucje, warsztaty samochodowe i wiele innych podmiotów.
         p4: Brzmi zachęcająco? Zapraszamy serdecznie Państwa do zapoznania się z naszymi produktami!
       forlux_products:
         title: ŚRODKI CZYSTOŚCI FORLUX
@@ -86,8 +87,8 @@ pl:
       title: "Odstąpienie od umowy"
       subtitle: "Zasady odstąpienia od umowy"
       phone_number: "Biuro: tel. "
-      first_step: "W ciągu 14 dni od otrzymania przesyłki skontaktuj się z nami 
-      <br> 
+      first_step: "W ciągu 14 dni od otrzymania przesyłki skontaktuj się z nami
+      <br>
       i poinformuj nas o chęci odstąpienia od umowy."
       second_step: "Po rozmowie z nami, pobierz formularz, wydrukuj i wypełnij."
       third_step: "Przed upływem 14 dni od momentu zgłoszenia nadaj
@@ -97,3 +98,6 @@ pl:
       tos_details: "Szczegółowe informacje dotyczące odstąpienia od umowy<br>
 znajdziesz w naszym Regulaminie."
       tos: Regulamin
+    admin:
+      new_image: Nowy wygląd
+      view_image: Zobacz obrazek

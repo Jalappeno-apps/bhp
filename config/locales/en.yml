@@ -12,3 +12,7 @@ en:
       fill_details: Fill details
       shipment: Shipment
       order_review: Order review
+    admin:
+      new_image: New Image
+      view_image: View Image
+      hero_image: ~

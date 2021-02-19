@@ -27,5 +27,12 @@ Rails.application.routes.draw do
     # get "/", to: "under_construction#index"
     # get "home", to: "home#index"
   end
-end
 
+  Spree::Core::Engine.add_routes do
+    get '/hero_images', to: 'hero_image#index', as: 'hero_images'
+    get '/hero_images/new', to: 'hero_image#new', as: 'new_hero_image'
+    get '/hero_images/:id', to: 'hero_image#view', as: 'view_hero_image'
+    post '/hero_images', to: 'hero_image#create', as: 'create_hero_image'
+    delete '/hero_images/:id', to: 'hero_image#destroy', as: 'delete_hero_image'
+  end
+end
