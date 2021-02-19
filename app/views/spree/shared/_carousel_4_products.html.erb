@@ -148,7 +148,6 @@
 <script>
   function addItemToCart(target) {
     var $cartForm = $(event.currentTarget);
-    console.log($cartForm);
 
     var variantId = parseInt(target.parentElement.children[0].value).toString(10);
     var quantity = parseInt(target.parentElement.parentElement.children[0].children[0].children[1].value);

@@ -11,8 +11,8 @@ module Spree
         params["message"], 
         ENV['DELIVER_EMAIL']
       ).deliver_now
-      flash[:success] = "Dziękujemy za kontakt, wrócimy niebawem z odpowiedzią!"
-      redirect_to "/#", flash: { success: "Dziękujemy za kontakt, wrócimy niebawem z odpowiedzią!" }
+
+      redirect_to "#{root_path}#contact-form", flash: { success: "Dziękujemy za kontakt, wrócimy niebawem z odpowiedzią!" }
     end
   end
 end
