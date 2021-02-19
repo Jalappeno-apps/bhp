@@ -21,16 +21,16 @@ module Spree
 			@hero_image = Spree::HeroImage.create(hero_image_params)
 
 			if @hero_image.save
-				redirect_with_notice "New hero image added for home page!"
+				redirect_with_notice "Nowy baner został dodany do strony głównej"
 			else
-				flash.notice = "Unable to save image"
-				render 'new'
+				flash.notice = "Nie można załadować tego pliku"
+				render 'Nowy'
 			end
 		end
 
 		def destroy
 			@hero_image.destroy
-			redirect_with_notice "Image was successfully removed"
+			redirect_with_notice "Zdjęcie zostało usunięte z powodzeniem"
 		end
 
 		private
@@ -50,10 +50,10 @@ module Spree
 				@hero_image = Spree::HeroImage.find(id)
 
 			rescue ActiveRecord::RecordNotFound
-				redirect_with_notice("Image of ID #{id} not found")
+				redirect_with_notice("Zdjęcie o numerze ID#{id} nie zostało znalezione")
 
 			rescue StandardError
-				redirect_with_notice("Oops! An Unknown error occurred")
+				redirect_with_notice("Ups! Nieznany błąd. Skontaktuj się z twórcą strony")
 			end			# Rescue block
 		end				# end of set_hero_image definition
 	end					# End of HeroImageController
