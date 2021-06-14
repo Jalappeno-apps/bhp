@@ -1,5 +1,6 @@
 # See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
 User-agent: *
+Disallow: /t/
 Disallow: /checkout
 Disallow: /cart
 Disallow: /orders
@@ -36,4 +37,7 @@ User-agent: SemrushBot-SEOAB
 Disallow: /
 
 User-agent: PetalBot
+Disallow: /
+
+User-agent: BLEXBot
 Disallow: /
