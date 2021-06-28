@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/archetype2142/spree.git
-  revision: 1c26563a1a913c672edb65117b1b8be60a334fc0
+  revision: 4729ffc70eca75af60540ff2ac954f23ce4786c6
   branch: master
   specs:
     spree (4.2.0.rc1)
@@ -138,7 +138,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    active_storage_validations (0.9.4)
+    active_storage_validations (0.9.5)
       rails (>= 5.2.0)
     activejob (6.0.4)
       activesupport (= 6.0.4)
@@ -494,7 +494,7 @@ DEPENDENCIES
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
-  rails (~> 6.0.3, >= 6.0.3.3)
+  rails (~> 6.0.3)
   rdoc
   sass-rails (>= 6)
   selenium-webdriver
