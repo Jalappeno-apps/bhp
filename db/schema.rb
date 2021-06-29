@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_11_132312) do
+ActiveRecord::Schema.define(version: 2021_06_01_053122) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -347,6 +347,8 @@ ActiveRecord::Schema.define(version: 2021_02_11_132312) do
     t.integer "position", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "filterable", default: true, null: false
+    t.index ["filterable"], name: "index_spree_option_types_on_filterable"
     t.index ["name"], name: "index_spree_option_types_on_name"
     t.index ["position"], name: "index_spree_option_types_on_position"
   end
@@ -452,10 +454,16 @@ ActiveRecord::Schema.define(version: 2021_02_11_132312) do
     t.boolean "auto_capture"
     t.text "preferences"
     t.integer "position", default: 0
-    t.bigint "store_id"
     t.index ["id", "type"], name: "index_spree_payment_methods_on_id_and_type"
     t.index ["id"], name: "index_spree_payment_methods_on_id"
-    t.index ["store_id"], name: "index_spree_payment_methods_on_store_id"
+  end
+
+  create_table "spree_payment_methods_stores", id: false, force: :cascade do |t|
+    t.bigint "payment_method_id"
+    t.bigint "store_id"
+    t.index ["payment_method_id", "store_id"], name: "payment_mentod_id_store_id_unique_index", unique: true
+    t.index ["payment_method_id"], name: "index_spree_payment_methods_stores_on_payment_method_id"
+    t.index ["store_id"], name: "index_spree_payment_methods_stores_on_store_id"
   end
 
   create_table "spree_payments", id: :serial, force: :cascade do |t|
@@ -1039,9 +1047,10 @@ ActiveRecord::Schema.define(version: 2021_02_11_132312) do
     t.text "description"
     t.text "address"
     t.string "contact_phone"
-    t.string "contact_email"
     t.string "new_order_notifications_email"
     t.string "seo_robots"
+    t.integer "checkout_zone_id"
+    t.string "supported_locales"
     t.index "lower((code)::text)", name: "index_spree_stores_on_lower_code", unique: true
     t.index ["default"], name: "index_spree_stores_on_default"
     t.index ["url"], name: "index_spree_stores_on_url"
@@ -1200,7 +1209,7 @@ ActiveRecord::Schema.define(version: 2021_02_11_132312) do
     t.integer "zone_members_count", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "kind"
+    t.string "kind", default: "state"
     t.index ["default_tax"], name: "index_spree_zones_on_default_tax"
     t.index ["kind"], name: "index_spree_zones_on_kind"
   end
