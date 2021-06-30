@@ -67,7 +67,7 @@ GIT
 
 GIT
   remote: https://github.com/archetype2142/spree_i18n.git
-  revision: 5f10e921de3c0826f5a6929020a087eb9a5de57f
+  revision: 45174ca3651b50071b31442c70814c803216c4d9
   branch: master
   specs:
     spree_i18n (4.1.0)
@@ -452,7 +452,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    twitter_cldr (6.6.0)
+    twitter_cldr (6.6.1)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
