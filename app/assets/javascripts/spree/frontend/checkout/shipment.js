@@ -1,4 +1,11 @@
-/* global accounting */
+// /* global accounting */
+// document.querySelectorAll(".spree-radio-label").forEach((button)=> {
+//   button.addEventListener('click') {
+
+//   }
+// })
+
+
 function ShippingTotalManager (input1) {
   this.input = input1
   this.shippingMethods = this.input.shippingMethods
@@ -48,12 +55,13 @@ ShippingTotalManager.prototype.bindEvent = function () {
   }.bind(this))
 }
 
-Spree.ready(function ($) {
+window.addEventListener('DOMContentLoaded', () => {
   var input = {
     orderTotal: $('#summary-order-total'),
     taxTotal: $('[data-hook="tax-total"]'),
     shipmentTotal: $('[data-hook="shipping-total"]'),
     shippingMethods: $('input[data-behavior="shipping-method-selector"]')
   }
+
   return new ShippingTotalManager(input).bindEvent()
-})
+});
