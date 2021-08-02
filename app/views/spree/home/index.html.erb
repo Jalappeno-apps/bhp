@@ -191,41 +191,6 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="container pt-2">
-        <h3 class="mb-5">Szukasz współpracy długoterminowej?<br/>Wyślij zapytanie!</h3>
-        <%= form_with url: contact_form_index_path do |f| %>
-          <div class="row">
-            <div class="form-group col-md-12">
-              <%= f.text_field :email, class: "form-control round-input", placeholder: Spree.t('footer.contact.email'), type: 'email', required: true %>
-              <small class="form-text text-muted">Nie udostępnimy nigdy Twojego adresu innym podmiotom.</small>
-            </div>
-            <div class="form-group col-12">
-              <%= f.text_field :name, class: "form-control round-input", placeholder: Spree.t('footer.contact.name_surname_placeholder'), required: true %>
-            </div>
-
-            <div class="form-group col-6">
-              <%= f.text_field :company, class: "form-control round-input", placeholder: Spree.t('footer.contact.company'), required: true %>
-            </div>
-
-            <div class="form-group col-6">
-              <%= f.text_field :nip, class: "form-control round-input", placeholder: Spree.t('footer.contact.nip'), required: true %>
-            </div>
-
-            <div class="form-group col-12">
-              <%= f.text_area :message, class: "form-control round-input", placeholder: Spree.t('footer.contact.message'), rows: 3, required: true %>
-            </div>
-            <div class="col-12 d-flex justify-content-end">
-              <span class="text-muted"> Wysyłając zapytanie z formularza, potwierdzasz naszą <a href="/terms-of-service">politykę prywatności</a>. </span>
-              <%= f.submit "Wyślij", class: "btn btn-primary" %>
-            </div>
-          </div>
-        <% end %>
-        <div class="col-12 mt-5" id="contact-form">
-          <%= flash_messages %>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
